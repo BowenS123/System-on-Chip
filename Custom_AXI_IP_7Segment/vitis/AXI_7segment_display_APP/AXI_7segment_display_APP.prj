@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="AXI_7segment_display_APP" location="C:/PXL/devWorks/devWorks2/Custom_AXI_IP_7Segment/vitis/AXI_7segment_display_APP" platform="C:/PXL/devWorks/devWorks2/Custom_AXI_IP_7Segment/vitis/7Segment_display/export/7Segment_display/7Segment_display.xpfm" platformUID="xilinx:pynq-z2::0.0(custom)" systemProject="AXI_7segment_display_APP_system" sysConfig="7Segment_display" runtime="cpp" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="6b1fd2f004d0c935a9d90039df3b6caf">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1968723686">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.463939039" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

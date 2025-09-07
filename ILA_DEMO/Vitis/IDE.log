@@ -1,0 +1,210 @@
+09:34:13 DEBUG : Logs will be stored at 'C:/PXL/devWorks/devWorks2/ILA_DEMO/Vitis/IDE.log'.
+09:34:37 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\PXL\devWorks\devWorks2\ILA_DEMO\Vitis\temp_xsdb_launch_script.tcl
+09:34:37 INFO  : Platform repository initialization has completed.
+09:34:38 INFO  : Registering command handlers for Vitis TCF services
+09:34:38 ERROR : (XSDB Server)'\gnu\microblaze\lin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+09:34:38 ERROR : (XSDB Server)'\gnu\microblaze\nt\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+'\gnuwin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+09:34:42 INFO  : XSCT server has started successfully.
+09:34:42 INFO  : plnx-install-location is set to ''
+09:34:44 INFO  : Successfully done setting XSCT server connection channel  
+09:34:44 INFO  : Successfully done query RDI_DATADIR 
+09:34:44 INFO  : Successfully done setting workspace for the tool. 
+09:36:15 INFO  : Result from executing command 'getProjects': ILADEMO
+09:36:15 INFO  : Result from executing command 'getPlatforms': 
+09:36:15 WARN  : An unexpected exception occurred in the module 'platform project logging'
+09:36:16 INFO  : Platform 'ILADEMO' is added to custom repositories.
+09:36:32 INFO  : Platform 'ILADEMO' is added to custom repositories.
+09:40:53 INFO  : Result from executing command 'getProjects': ILADEMO
+09:40:53 INFO  : Result from executing command 'getPlatforms': ILADEMO|C:/PXL/devWorks/devWorks2/ILA_DEMO/Vitis/ILADEMO/export/ILADEMO/ILADEMO.xpfm
+09:40:54 INFO  : Checking for BSP changes to sync application flags for project 'ILADEMO_APP'...
+09:41:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:41:36 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+09:41:36 INFO  : 'jtag frequency' command is executed.
+09:41:36 INFO  : Context for 'APU' is selected.
+09:41:36 INFO  : System reset is completed.
+09:41:39 INFO  : 'after 3000' command is executed.
+09:41:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+09:41:42 INFO  : Device configured successfully with "C:/PXL/devWorks/devWorks2/ILA_DEMO/Vitis/ILADEMO_APP/_ide/bitstream/ILADEMO.bit"
+09:41:42 INFO  : Context for 'APU' is selected.
+09:41:42 INFO  : Hardware design and registers information is loaded from 'C:/PXL/devWorks/devWorks2/ILA_DEMO/Vitis/ILADEMO/export/ILADEMO/hw/ILADEMO.xsa'.
+09:41:42 INFO  : 'configparams force-mem-access 1' command is executed.
+09:41:42 INFO  : Context for 'APU' is selected.
+09:41:42 INFO  : Sourcing of 'C:/PXL/devWorks/devWorks2/ILA_DEMO/Vitis/ILADEMO_APP/_ide/psinit/ps7_init.tcl' is done.
+09:41:42 INFO  : 'ps7_init' command is executed.
+09:41:42 INFO  : 'ps7_post_config' command is executed.
+09:41:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:41:42 INFO  : The application 'C:/PXL/devWorks/devWorks2/ILA_DEMO/Vitis/ILADEMO_APP/Debug/ILADEMO_APP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:41:42 INFO  : 'configparams force-mem-access 0' command is executed.
+09:41:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/PXL/devWorks/devWorks2/ILA_DEMO/Vitis/ILADEMO_APP/_ide/bitstream/ILADEMO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/PXL/devWorks/devWorks2/ILA_DEMO/Vitis/ILADEMO/export/ILADEMO/hw/ILADEMO.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/PXL/devWorks/devWorks2/ILA_DEMO/Vitis/ILADEMO_APP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/PXL/devWorks/devWorks2/ILA_DEMO/Vitis/ILADEMO_APP/Debug/ILADEMO_APP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:41:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:41:43 INFO  : 'con' command is executed.
+09:41:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+09:41:43 INFO  : Launch script is exported to file 'C:\PXL\devWorks\devWorks2\ILA_DEMO\Vitis\ILADEMO_APP_system\_ide\scripts\debugger_ilademo_app-default.tcl'
+09:45:56 INFO  : Disconnected from the channel tcfchan#2.
+09:45:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:45:58 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+09:45:58 INFO  : 'jtag frequency' command is executed.
+09:45:58 INFO  : 'set bp_45_57_0 [bpadd -target-id all -ct-input {0} -ct-output {24 25 26 27} -skip-on-step 0]' command is executed.
+09:45:58 INFO  : 'set bp_45_57_1 [bpadd -target-id all -ct-input {24 25 26 27} -ct-output {0}]' command is executed.
+09:45:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+09:46:00 INFO  : Device configured successfully with "C:/PXL/devWorks/devWorks2/ILA_DEMO/Vitis/ILADEMO_APP/_ide/bitstream/ILADEMO.bit"
+09:46:01 INFO  : Context for 'APU' is selected.
+09:46:01 INFO  : Hardware design and registers information is loaded from 'C:/PXL/devWorks/devWorks2/ILA_DEMO/Vitis/ILADEMO/export/ILADEMO/hw/ILADEMO.xsa'.
+09:46:01 INFO  : 'configparams force-mem-access 1' command is executed.
+09:46:01 INFO  : Context for 'APU' is selected.
+09:46:01 INFO  : 'stop' command is executed.
+09:46:01 INFO  : Sourcing of 'C:/PXL/devWorks/devWorks2/ILA_DEMO/Vitis/ILADEMO_APP/_ide/psinit/ps7_init.tcl' is done.
+09:46:01 INFO  : 'ps7_init' command is executed.
+09:46:01 INFO  : 'ps7_post_config' command is executed.
+09:46:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:46:01 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+09:46:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:46:01 INFO  : The application 'C:/PXL/devWorks/devWorks2/ILA_DEMO/Vitis/ILADEMO_APP/Debug/ILADEMO_APP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:46:01 INFO  : 'configparams force-mem-access 0' command is executed.
+09:46:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+set bp_45_57_0 [bpadd -target-id all -ct-input {0} -ct-output {24 25 26 27} -skip-on-step 0]
+set bp_45_57_1 [bpadd -target-id all -ct-input {24 25 26 27} -ct-output {0}]
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/PXL/devWorks/devWorks2/ILA_DEMO/Vitis/ILADEMO_APP/_ide/bitstream/ILADEMO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/PXL/devWorks/devWorks2/ILA_DEMO/Vitis/ILADEMO/export/ILADEMO/hw/ILADEMO.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+stop
+source C:/PXL/devWorks/devWorks2/ILA_DEMO/Vitis/ILADEMO_APP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+rst -processor
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/PXL/devWorks/devWorks2/ILA_DEMO/Vitis/ILADEMO_APP/Debug/ILADEMO_APP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:46:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:46:01 INFO  : 'con' command is executed.
+09:46:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+09:46:01 INFO  : Launch script is exported to file 'C:\PXL\devWorks\devWorks2\ILA_DEMO\Vitis\ILADEMO_APP_system\_ide\scripts\debugger_ilademo_app-default.tcl'
+10:00:45 INFO  : Disconnected from the channel tcfchan#3.
+10:00:45 INFO  : 'bpremove $bp_45_57_0' command is executed.
+10:00:45 INFO  : 'bpremove $bp_45_57_1' command is executed.
+10:00:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:00:46 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+10:00:46 INFO  : 'jtag frequency' command is executed.
+10:00:46 INFO  : 'set bp_0_46_0 [bpadd -target-id all -ct-input {0} -ct-output {24 25 26 27} -skip-on-step 0]' command is executed.
+10:00:46 INFO  : 'set bp_0_46_1 [bpadd -target-id all -ct-input {24 25 26 27} -ct-output {0}]' command is executed.
+10:00:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+10:00:49 INFO  : Device configured successfully with "C:/PXL/devWorks/devWorks2/ILA_DEMO/Vitis/ILADEMO_APP/_ide/bitstream/ILADEMO.bit"
+10:00:49 INFO  : Context for 'APU' is selected.
+10:00:49 INFO  : Hardware design and registers information is loaded from 'C:/PXL/devWorks/devWorks2/ILA_DEMO/Vitis/ILADEMO/export/ILADEMO/hw/ILADEMO.xsa'.
+10:00:49 INFO  : 'configparams force-mem-access 1' command is executed.
+10:00:49 INFO  : Context for 'APU' is selected.
+10:00:49 INFO  : 'stop' command is executed.
+10:00:49 INFO  : Sourcing of 'C:/PXL/devWorks/devWorks2/ILA_DEMO/Vitis/ILADEMO_APP/_ide/psinit/ps7_init.tcl' is done.
+10:00:49 INFO  : 'ps7_init' command is executed.
+10:00:49 INFO  : 'ps7_post_config' command is executed.
+10:00:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:00:49 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:00:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:00:49 INFO  : The application 'C:/PXL/devWorks/devWorks2/ILA_DEMO/Vitis/ILADEMO_APP/Debug/ILADEMO_APP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:00:49 INFO  : 'configparams force-mem-access 0' command is executed.
+10:00:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+set bp_0_46_0 [bpadd -target-id all -ct-input {0} -ct-output {24 25 26 27} -skip-on-step 0]
+set bp_0_46_1 [bpadd -target-id all -ct-input {24 25 26 27} -ct-output {0}]
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/PXL/devWorks/devWorks2/ILA_DEMO/Vitis/ILADEMO_APP/_ide/bitstream/ILADEMO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/PXL/devWorks/devWorks2/ILA_DEMO/Vitis/ILADEMO/export/ILADEMO/hw/ILADEMO.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+stop
+source C:/PXL/devWorks/devWorks2/ILA_DEMO/Vitis/ILADEMO_APP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+rst -processor
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/PXL/devWorks/devWorks2/ILA_DEMO/Vitis/ILADEMO_APP/Debug/ILADEMO_APP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:00:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:00:50 INFO  : 'con' command is executed.
+10:00:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+10:00:50 INFO  : Launch script is exported to file 'C:\PXL\devWorks\devWorks2\ILA_DEMO\Vitis\ILADEMO_APP_system\_ide\scripts\debugger_ilademo_app-default.tcl'
+10:23:04 INFO  : Disconnected from the channel tcfchan#4.
+10:23:04 INFO  : 'bpremove $bp_0_46_0' command is executed.
+10:23:04 INFO  : 'bpremove $bp_0_46_1' command is executed.
+10:23:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:23:05 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+10:23:05 INFO  : 'jtag frequency' command is executed.
+10:23:05 INFO  : 'set bp_23_5_0 [bpadd -target-id all -ct-input {0} -ct-output {24 25 26 27} -skip-on-step 0]' command is executed.
+10:23:05 INFO  : 'set bp_23_5_1 [bpadd -target-id all -ct-input {24 25 26 27} -ct-output {0}]' command is executed.
+10:23:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+10:23:08 INFO  : Device configured successfully with "C:/PXL/devWorks/devWorks2/ILA_DEMO/Vitis/ILADEMO_APP/_ide/bitstream/ILADEMO.bit"
+10:23:08 INFO  : Context for 'APU' is selected.
+10:23:08 INFO  : Hardware design and registers information is loaded from 'C:/PXL/devWorks/devWorks2/ILA_DEMO/Vitis/ILADEMO/export/ILADEMO/hw/ILADEMO.xsa'.
+10:23:08 INFO  : 'configparams force-mem-access 1' command is executed.
+10:23:08 INFO  : Context for 'APU' is selected.
+10:23:08 INFO  : 'stop' command is executed.
+10:23:08 INFO  : Sourcing of 'C:/PXL/devWorks/devWorks2/ILA_DEMO/Vitis/ILADEMO_APP/_ide/psinit/ps7_init.tcl' is done.
+10:28:38 ERROR : 'ps7_init' is cancelled.
+10:28:38 ERROR : Failed to connect to hardware server on host '127.0.0.1' and port '3121'.
+Reason: 'connect -url tcp:127.0.0.1:3121' is cancelled.
+10:28:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+10:28:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+set bp_23_5_0 [bpadd -target-id all -ct-input {0} -ct-output {24 25 26 27} -skip-on-step 0]
+set bp_23_5_1 [bpadd -target-id all -ct-input {24 25 26 27} -ct-output {0}]
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/PXL/devWorks/devWorks2/ILA_DEMO/Vitis/ILADEMO_APP/_ide/bitstream/ILADEMO.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/PXL/devWorks/devWorks2/ILA_DEMO/Vitis/ILADEMO/export/ILADEMO/hw/ILADEMO.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+stop
+source C:/PXL/devWorks/devWorks2/ILA_DEMO/Vitis/ILADEMO_APP/_ide/psinit/ps7_init.tcl
+ps7_init
+----------------End of Script----------------
+

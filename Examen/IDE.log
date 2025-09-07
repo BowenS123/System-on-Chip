@@ -1,0 +1,1027 @@
+09:11:37 DEBUG : Logs will be stored at 'C:/PXL/devWorks/devWorks2/Examen/IDE.log'.
+09:11:40 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\PXL\devWorks\devWorks2\Examen\temp_xsdb_launch_script.tcl
+09:11:40 INFO  : Platform repository initialization has completed.
+09:11:40 INFO  : Registering command handlers for Vitis TCF services
+09:11:40 ERROR : (XSDB Server)'\gnu\microblaze\lin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+09:11:40 ERROR : (XSDB Server)'\gnu\microblaze\nt\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+09:11:40 ERROR : (XSDB Server)'\gnuwin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+09:11:43 INFO  : XSCT server has started successfully.
+09:11:43 INFO  : plnx-install-location is set to ''
+09:11:43 INFO  : Successfully done setting XSCT server connection channel  
+09:11:43 INFO  : Successfully done setting workspace for the tool. 
+09:11:43 INFO  : Successfully done query RDI_DATADIR 
+09:12:37 INFO  : Result from executing command 'getProjects': ExamenSoC
+09:12:37 INFO  : Result from executing command 'getPlatforms': 
+09:12:37 WARN  : An unexpected exception occurred in the module 'platform project logging'
+09:12:37 INFO  : Platform 'ExamenSoC' is added to custom repositories.
+09:12:47 INFO  : Platform 'ExamenSoC' is added to custom repositories.
+09:14:15 INFO  : Checking for BSP changes to sync application flags for project 'ExamenSoc_APP'...
+09:14:15 INFO  : Result from executing command 'getProjects': ExamenSoC;ExamenSoc_APP;ExamenSoc_APP_system;RemoteSystemsTempFiles
+09:14:15 WARN  : Failed to closehw "C:/PXL/devWorks/devWorks2/Examen/ExamenSoC/export/ExamenSoC/hw/ExamenSoC.xsa"
+Reason: C:/PXL/devWorks/devWorks2/Examen/ExamenSoC/export/ExamenSoC/hw/ExamenSoC.xsa is not available in the current workspace
+use 'getprojects' command to see list of available projects in current workspace
+09:14:15 INFO  : Result from executing command 'getProjects': ExamenSoC;ExamenSoc_APP;ExamenSoc_APP_system;RemoteSystemsTempFiles
+09:14:15 ERROR : Failed to openhw "C:/PXL/devWorks/devWorks2/Examen/ExamenSoC/export/ExamenSoC/hw/ExamenSoC.xsa"
+Reason: C:/PXL/devWorks/devWorks2/Examen/ExamenSoC/export/ExamenSoC/hw/ExamenSoC.xsa is not available in the current workspace
+use 'getprojects' command to see list of available projects in current workspace
+09:14:15 ERROR : Failed to update application flags from BSP for 'ExamenSoc_APP'. Reason: null
+java.lang.NullPointerException: null
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.<init>(SDxSwPlatform.java:305) ~[com.xilinx.sdx.sw_1.0.0.202406140522.jar:?]
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.create(SDxSwPlatform.java:214) ~[com.xilinx.sdx.sw_1.0.0.202406140522.jar:?]
+	at com.xilinx.sdx.sdk.core.util.SdkPlatformHelper.getSwPlatform(SdkPlatformHelper.java:64) ~[com.xilinx.sdx.sdk.core_1.0.0.202406140522.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.getSwPlatform(SdkMakefileGenerationListener.java:160) ~[com.xilinx.sdx.sdk.core_1.0.0.202406140522.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.syncAppFlags(SdkMakefileGenerationListener.java:78) [com.xilinx.sdx.sdk.core_1.0.0.202406140522.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.preMakefileGeneration(SdkMakefileGenerationListener.java:48) [com.xilinx.sdx.sdk.core_1.0.0.202406140522.jar:?]
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.notifyPreMakefileGenerationListeners(XilinxGnuMakefileGenerator.java:91) [com.xilinx.sdk.managedbuilder_1.0.0.202406140522.jar:?]
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.regenerateMakefiles(XilinxGnuMakefileGenerator.java:75) [com.xilinx.sdk.managedbuilder_1.0.0.202406140522.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1006) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:513) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) [org.eclipse.equinox.common_3.11.0.v20200206-0817.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) [org.eclipse.equinox.common_3.11.0.v20200206-0817.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291) [org.eclipse.ui.ide_3.17.0.v20200217-1511.jar:?]
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.700.v20200106-1020.jar:?]
+09:16:25 INFO  : Result from executing command 'getProjects': ExamenSoC
+09:16:25 INFO  : Result from executing command 'getPlatforms': ExamenSoC|C:/PXL/devWorks/devWorks2/Examen/ExamenSoC/export/ExamenSoC/ExamenSoC.xpfm
+09:16:25 INFO  : Checking for BSP changes to sync application flags for project 'ExamenSoc_APP'...
+10:01:22 INFO  : Checking for BSP changes to sync application flags for project 'ExamenSoc_APP'...
+10:01:42 INFO  : Checking for BSP changes to sync application flags for project 'ExamenSoc_APP'...
+10:02:06 INFO  : Checking for BSP changes to sync application flags for project 'ExamenSoc_APP'...
+10:02:35 INFO  : Checking for BSP changes to sync application flags for project 'ExamenSoc_APP'...
+10:02:44 INFO  : Checking for BSP changes to sync application flags for project 'ExamenSoc_APP'...
+10:02:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:02:51 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+10:02:51 INFO  : 'jtag frequency' command is executed.
+10:02:52 INFO  : Context for 'APU' is selected.
+10:02:52 INFO  : System reset is completed.
+10:02:55 INFO  : 'after 3000' command is executed.
+10:02:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+10:02:57 INFO  : Device configured successfully with "C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/bitstream/ExamenSoC.bit"
+10:02:57 INFO  : Context for 'APU' is selected.
+10:02:57 INFO  : Hardware design and registers information is loaded from 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoC/export/ExamenSoC/hw/ExamenSoC.xsa'.
+10:02:57 INFO  : 'configparams force-mem-access 1' command is executed.
+10:02:57 INFO  : Context for 'APU' is selected.
+10:02:57 INFO  : Sourcing of 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/psinit/ps7_init.tcl' is done.
+10:02:58 INFO  : 'ps7_init' command is executed.
+10:02:58 INFO  : 'ps7_post_config' command is executed.
+10:02:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:02:58 INFO  : The application 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/Debug/ExamenSoc_APP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:02:58 INFO  : 'configparams force-mem-access 0' command is executed.
+10:02:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/bitstream/ExamenSoC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/PXL/devWorks/devWorks2/Examen/ExamenSoC/export/ExamenSoC/hw/ExamenSoC.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/Debug/ExamenSoc_APP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:02:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:02:58 INFO  : 'con' command is executed.
+10:02:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+10:02:58 INFO  : Launch script is exported to file 'C:\PXL\devWorks\devWorks2\Examen\ExamenSoc_APP_system\_ide\scripts\debugger_examensoc_app-default.tcl'
+10:05:06 INFO  : Checking for BSP changes to sync application flags for project 'ExamenSoc_APP'...
+10:05:13 INFO  : Disconnected from the channel tcfchan#3.
+10:05:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:05:14 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+10:05:14 ERROR : port closed
+10:05:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+10:05:14 ERROR : port closed
+10:05:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:05:18 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+10:05:18 INFO  : 'jtag frequency' command is executed.
+10:05:18 INFO  : Context for 'APU' is selected.
+10:05:18 INFO  : System reset is completed.
+10:05:21 INFO  : 'after 3000' command is executed.
+10:05:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+10:05:23 INFO  : Device configured successfully with "C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/bitstream/ExamenSoC.bit"
+10:05:23 INFO  : Context for 'APU' is selected.
+10:05:23 INFO  : Hardware design and registers information is loaded from 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoC/export/ExamenSoC/hw/ExamenSoC.xsa'.
+10:05:23 INFO  : 'configparams force-mem-access 1' command is executed.
+10:05:23 INFO  : Context for 'APU' is selected.
+10:05:23 INFO  : Sourcing of 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/psinit/ps7_init.tcl' is done.
+10:05:23 INFO  : 'ps7_init' command is executed.
+10:05:23 INFO  : 'ps7_post_config' command is executed.
+10:05:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:05:24 INFO  : The application 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/Debug/ExamenSoc_APP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:05:24 INFO  : 'configparams force-mem-access 0' command is executed.
+10:05:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/bitstream/ExamenSoC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/PXL/devWorks/devWorks2/Examen/ExamenSoC/export/ExamenSoC/hw/ExamenSoC.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/Debug/ExamenSoc_APP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:05:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:05:24 INFO  : 'con' command is executed.
+10:05:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+10:05:24 INFO  : Launch script is exported to file 'C:\PXL\devWorks\devWorks2\Examen\ExamenSoc_APP_system\_ide\scripts\debugger_examensoc_app-default.tcl'
+10:05:33 INFO  : Checking for BSP changes to sync application flags for project 'ExamenSoc_APP'...
+10:05:40 INFO  : Disconnected from the channel tcfchan#4.
+10:05:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:05:41 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+10:05:41 INFO  : 'jtag frequency' command is executed.
+10:05:41 INFO  : Context for 'APU' is selected.
+10:05:41 INFO  : System reset is completed.
+10:05:44 INFO  : 'after 3000' command is executed.
+10:05:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+10:05:46 INFO  : Device configured successfully with "C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/bitstream/ExamenSoC.bit"
+10:05:47 INFO  : Context for 'APU' is selected.
+10:05:47 INFO  : Hardware design and registers information is loaded from 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoC/export/ExamenSoC/hw/ExamenSoC.xsa'.
+10:05:47 INFO  : 'configparams force-mem-access 1' command is executed.
+10:05:47 INFO  : Context for 'APU' is selected.
+10:05:47 INFO  : Sourcing of 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/psinit/ps7_init.tcl' is done.
+10:05:47 INFO  : 'ps7_init' command is executed.
+10:05:47 INFO  : 'ps7_post_config' command is executed.
+10:05:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:05:47 INFO  : The application 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/Debug/ExamenSoc_APP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:05:47 INFO  : 'configparams force-mem-access 0' command is executed.
+10:05:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/bitstream/ExamenSoC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/PXL/devWorks/devWorks2/Examen/ExamenSoC/export/ExamenSoC/hw/ExamenSoC.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/Debug/ExamenSoc_APP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:05:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:05:47 INFO  : 'con' command is executed.
+10:05:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+10:05:47 INFO  : Launch script is exported to file 'C:\PXL\devWorks\devWorks2\Examen\ExamenSoc_APP_system\_ide\scripts\debugger_examensoc_app-default.tcl'
+10:05:58 INFO  : Checking for BSP changes to sync application flags for project 'ExamenSoc_APP'...
+10:06:02 INFO  : Disconnected from the channel tcfchan#5.
+10:06:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:06:03 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+10:06:03 ERROR : port closed
+10:06:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+10:06:03 ERROR : port closed
+10:06:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:06:08 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+10:06:08 INFO  : 'jtag frequency' command is executed.
+10:06:08 INFO  : Context for 'APU' is selected.
+10:06:08 INFO  : System reset is completed.
+10:06:11 INFO  : 'after 3000' command is executed.
+10:06:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+10:06:13 INFO  : Device configured successfully with "C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/bitstream/ExamenSoC.bit"
+10:06:13 INFO  : Context for 'APU' is selected.
+10:06:13 INFO  : Hardware design and registers information is loaded from 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoC/export/ExamenSoC/hw/ExamenSoC.xsa'.
+10:06:13 INFO  : 'configparams force-mem-access 1' command is executed.
+10:06:14 INFO  : Context for 'APU' is selected.
+10:06:14 INFO  : Sourcing of 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/psinit/ps7_init.tcl' is done.
+10:06:14 INFO  : 'ps7_init' command is executed.
+10:06:14 INFO  : 'ps7_post_config' command is executed.
+10:06:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:06:14 INFO  : The application 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/Debug/ExamenSoc_APP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:06:14 INFO  : 'configparams force-mem-access 0' command is executed.
+10:06:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/bitstream/ExamenSoC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/PXL/devWorks/devWorks2/Examen/ExamenSoC/export/ExamenSoC/hw/ExamenSoC.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/Debug/ExamenSoc_APP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:06:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:06:14 INFO  : 'con' command is executed.
+10:06:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+10:06:14 INFO  : Launch script is exported to file 'C:\PXL\devWorks\devWorks2\Examen\ExamenSoc_APP_system\_ide\scripts\debugger_examensoc_app-default.tcl'
+10:10:44 INFO  : Disconnected from the channel tcfchan#6.
+10:10:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:11:14 INFO  : Checking for BSP changes to sync application flags for project 'ExamenSoc_APP'...
+10:12:44 INFO  : Checking for BSP changes to sync application flags for project 'ExamenSoc_APP'...
+10:12:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+10:12:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:12:44 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+10:13:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+10:13:02 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+10:13:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:13:17 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+10:13:17 INFO  : 'jtag frequency' command is executed.
+10:13:17 INFO  : Context for 'APU' is selected.
+10:13:17 INFO  : System reset is completed.
+10:13:20 INFO  : 'after 3000' command is executed.
+10:13:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+10:13:23 INFO  : Device configured successfully with "C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/bitstream/ExamenSoC.bit"
+10:13:23 INFO  : Context for 'APU' is selected.
+10:13:23 INFO  : Hardware design and registers information is loaded from 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoC/export/ExamenSoC/hw/ExamenSoC.xsa'.
+10:13:23 INFO  : 'configparams force-mem-access 1' command is executed.
+10:13:23 INFO  : Context for 'APU' is selected.
+10:13:23 INFO  : Sourcing of 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/psinit/ps7_init.tcl' is done.
+10:13:23 INFO  : 'ps7_init' command is executed.
+10:13:23 INFO  : 'ps7_post_config' command is executed.
+10:13:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:13:23 INFO  : The application 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/Debug/ExamenSoc_APP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:13:23 INFO  : 'configparams force-mem-access 0' command is executed.
+10:13:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/bitstream/ExamenSoC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/PXL/devWorks/devWorks2/Examen/ExamenSoC/export/ExamenSoC/hw/ExamenSoC.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/Debug/ExamenSoc_APP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:13:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:13:24 INFO  : 'con' command is executed.
+10:13:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+10:13:24 INFO  : Launch script is exported to file 'C:\PXL\devWorks\devWorks2\Examen\ExamenSoc_APP_system\_ide\scripts\debugger_examensoc_app-default.tcl'
+10:13:39 INFO  : Checking for BSP changes to sync application flags for project 'ExamenSoc_APP'...
+10:15:36 INFO  : Checking for BSP changes to sync application flags for project 'ExamenSoc_APP'...
+10:15:38 INFO  : Checking for BSP changes to sync application flags for project 'ExamenSoc_APP'...
+10:15:42 INFO  : Disconnected from the channel tcfchan#7.
+10:15:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:16:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:16:25 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+10:16:25 INFO  : 'jtag frequency' command is executed.
+10:16:25 INFO  : Context for 'APU' is selected.
+10:16:25 INFO  : System reset is completed.
+10:16:28 INFO  : 'after 3000' command is executed.
+10:16:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+10:16:31 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+10:16:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+10:16:33 INFO  : Device configured successfully with "C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/bitstream/ExamenSoC.bit"
+10:16:33 INFO  : Context for 'APU' is selected.
+10:16:33 INFO  : Hardware design and registers information is loaded from 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoC/export/ExamenSoC/hw/ExamenSoC.xsa'.
+10:16:33 INFO  : 'configparams force-mem-access 1' command is executed.
+10:16:33 INFO  : Context for 'APU' is selected.
+10:16:33 INFO  : Sourcing of 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/psinit/ps7_init.tcl' is done.
+10:16:34 INFO  : 'ps7_init' command is executed.
+10:16:34 INFO  : 'ps7_post_config' command is executed.
+10:16:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:16:34 INFO  : The application 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/Debug/ExamenSoc_APP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:16:34 INFO  : 'configparams force-mem-access 0' command is executed.
+10:16:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/bitstream/ExamenSoC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/PXL/devWorks/devWorks2/Examen/ExamenSoC/export/ExamenSoC/hw/ExamenSoC.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/Debug/ExamenSoc_APP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:16:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:16:34 INFO  : 'con' command is executed.
+10:16:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+10:16:34 INFO  : Launch script is exported to file 'C:\PXL\devWorks\devWorks2\Examen\ExamenSoc_APP_system\_ide\scripts\debugger_examensoc_app-default.tcl'
+10:17:56 INFO  : Checking for BSP changes to sync application flags for project 'ExamenSoc_APP'...
+10:17:59 INFO  : Disconnected from the channel tcfchan#8.
+10:18:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:18:00 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+10:18:00 ERROR : port closed
+10:18:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+10:18:00 ERROR : port closed
+10:18:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:18:12 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+10:18:12 INFO  : 'jtag frequency' command is executed.
+10:18:12 INFO  : Context for 'APU' is selected.
+10:18:12 INFO  : System reset is completed.
+10:18:15 INFO  : 'after 3000' command is executed.
+10:18:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+10:18:17 INFO  : Device configured successfully with "C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/bitstream/ExamenSoC.bit"
+10:18:17 INFO  : Context for 'APU' is selected.
+10:18:17 INFO  : Hardware design and registers information is loaded from 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoC/export/ExamenSoC/hw/ExamenSoC.xsa'.
+10:18:17 INFO  : 'configparams force-mem-access 1' command is executed.
+10:18:17 INFO  : Context for 'APU' is selected.
+10:18:17 INFO  : Sourcing of 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/psinit/ps7_init.tcl' is done.
+10:18:18 INFO  : 'ps7_init' command is executed.
+10:18:18 INFO  : 'ps7_post_config' command is executed.
+10:18:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:18:18 INFO  : The application 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/Debug/ExamenSoc_APP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:18:18 INFO  : 'configparams force-mem-access 0' command is executed.
+10:18:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/bitstream/ExamenSoC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/PXL/devWorks/devWorks2/Examen/ExamenSoC/export/ExamenSoC/hw/ExamenSoC.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/Debug/ExamenSoc_APP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:18:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:18:18 INFO  : 'con' command is executed.
+10:18:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+10:18:18 INFO  : Launch script is exported to file 'C:\PXL\devWorks\devWorks2\Examen\ExamenSoc_APP_system\_ide\scripts\debugger_examensoc_app-default.tcl'
+10:18:53 INFO  : Checking for BSP changes to sync application flags for project 'ExamenSoc_APP'...
+10:18:57 INFO  : Disconnected from the channel tcfchan#9.
+10:18:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:18:58 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+10:18:58 INFO  : 'jtag frequency' command is executed.
+10:18:58 INFO  : Context for 'APU' is selected.
+10:18:58 INFO  : System reset is completed.
+10:19:01 INFO  : 'after 3000' command is executed.
+10:19:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+10:19:04 INFO  : Device configured successfully with "C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/bitstream/ExamenSoC.bit"
+10:19:04 INFO  : Context for 'APU' is selected.
+10:19:04 INFO  : Hardware design and registers information is loaded from 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoC/export/ExamenSoC/hw/ExamenSoC.xsa'.
+10:19:04 INFO  : 'configparams force-mem-access 1' command is executed.
+10:19:04 INFO  : Context for 'APU' is selected.
+10:19:04 INFO  : Sourcing of 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/psinit/ps7_init.tcl' is done.
+10:19:04 INFO  : 'ps7_init' command is executed.
+10:19:04 INFO  : 'ps7_post_config' command is executed.
+10:19:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:19:04 INFO  : The application 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/Debug/ExamenSoc_APP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:19:04 INFO  : 'configparams force-mem-access 0' command is executed.
+10:19:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/bitstream/ExamenSoC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/PXL/devWorks/devWorks2/Examen/ExamenSoC/export/ExamenSoC/hw/ExamenSoC.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/Debug/ExamenSoc_APP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:19:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:19:05 INFO  : 'con' command is executed.
+10:19:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+10:19:05 INFO  : Launch script is exported to file 'C:\PXL\devWorks\devWorks2\Examen\ExamenSoc_APP_system\_ide\scripts\debugger_examensoc_app-default.tcl'
+10:23:18 INFO  : Checking for BSP changes to sync application flags for project 'ExamenSoc_APP'...
+10:23:24 INFO  : Disconnected from the channel tcfchan#10.
+10:23:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:23:25 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+10:23:26 INFO  : 'jtag frequency' command is executed.
+10:23:26 INFO  : Context for 'APU' is selected.
+10:23:26 INFO  : System reset is completed.
+10:23:29 INFO  : 'after 3000' command is executed.
+10:23:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+10:23:31 INFO  : Device configured successfully with "C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/bitstream/ExamenSoC.bit"
+10:23:31 INFO  : Context for 'APU' is selected.
+10:23:31 INFO  : Hardware design and registers information is loaded from 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoC/export/ExamenSoC/hw/ExamenSoC.xsa'.
+10:23:31 INFO  : 'configparams force-mem-access 1' command is executed.
+10:23:31 INFO  : Context for 'APU' is selected.
+10:23:31 INFO  : Sourcing of 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/psinit/ps7_init.tcl' is done.
+10:23:32 INFO  : 'ps7_init' command is executed.
+10:23:32 INFO  : 'ps7_post_config' command is executed.
+10:23:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:23:32 INFO  : The application 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/Debug/ExamenSoc_APP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:23:32 INFO  : 'configparams force-mem-access 0' command is executed.
+10:23:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/bitstream/ExamenSoC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/PXL/devWorks/devWorks2/Examen/ExamenSoC/export/ExamenSoC/hw/ExamenSoC.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/Debug/ExamenSoc_APP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:23:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:23:32 INFO  : 'con' command is executed.
+10:23:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+10:23:32 INFO  : Launch script is exported to file 'C:\PXL\devWorks\devWorks2\Examen\ExamenSoc_APP_system\_ide\scripts\debugger_examensoc_app-default.tcl'
+10:26:07 INFO  : Checking for BSP changes to sync application flags for project 'ExamenSoc_APP'...
+10:26:12 INFO  : Disconnected from the channel tcfchan#11.
+10:26:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:26:13 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+10:26:13 INFO  : 'jtag frequency' command is executed.
+10:26:13 INFO  : Context for 'APU' is selected.
+10:26:13 INFO  : System reset is completed.
+10:26:16 INFO  : 'after 3000' command is executed.
+10:26:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+10:26:18 INFO  : Device configured successfully with "C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/bitstream/ExamenSoC.bit"
+10:26:18 INFO  : Context for 'APU' is selected.
+10:26:18 INFO  : Hardware design and registers information is loaded from 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoC/export/ExamenSoC/hw/ExamenSoC.xsa'.
+10:26:18 INFO  : 'configparams force-mem-access 1' command is executed.
+10:26:18 INFO  : Context for 'APU' is selected.
+10:26:18 INFO  : Sourcing of 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/psinit/ps7_init.tcl' is done.
+10:26:19 INFO  : 'ps7_init' command is executed.
+10:26:19 INFO  : 'ps7_post_config' command is executed.
+10:26:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:26:19 INFO  : The application 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/Debug/ExamenSoc_APP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:26:19 INFO  : 'configparams force-mem-access 0' command is executed.
+10:26:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/bitstream/ExamenSoC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/PXL/devWorks/devWorks2/Examen/ExamenSoC/export/ExamenSoC/hw/ExamenSoC.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/Debug/ExamenSoc_APP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:26:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:26:19 INFO  : 'con' command is executed.
+10:26:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+10:26:19 INFO  : Launch script is exported to file 'C:\PXL\devWorks\devWorks2\Examen\ExamenSoc_APP_system\_ide\scripts\debugger_examensoc_app-default.tcl'
+10:26:29 INFO  : Checking for BSP changes to sync application flags for project 'ExamenSoc_APP'...
+10:28:11 INFO  : Checking for BSP changes to sync application flags for project 'ExamenSoc_APP'...
+10:28:14 INFO  : Disconnected from the channel tcfchan#12.
+10:28:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:28:15 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+10:28:15 INFO  : 'jtag frequency' command is executed.
+10:28:15 INFO  : Context for 'APU' is selected.
+10:28:15 INFO  : System reset is completed.
+10:28:18 INFO  : 'after 3000' command is executed.
+10:28:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+10:28:21 INFO  : Device configured successfully with "C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/bitstream/ExamenSoC.bit"
+10:28:21 INFO  : Context for 'APU' is selected.
+10:28:21 INFO  : Hardware design and registers information is loaded from 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoC/export/ExamenSoC/hw/ExamenSoC.xsa'.
+10:28:21 INFO  : 'configparams force-mem-access 1' command is executed.
+10:28:21 INFO  : Context for 'APU' is selected.
+10:28:21 INFO  : Sourcing of 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/psinit/ps7_init.tcl' is done.
+10:28:21 INFO  : 'ps7_init' command is executed.
+10:28:21 INFO  : 'ps7_post_config' command is executed.
+10:28:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:28:21 INFO  : The application 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/Debug/ExamenSoc_APP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:28:21 INFO  : 'configparams force-mem-access 0' command is executed.
+10:28:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/bitstream/ExamenSoC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/PXL/devWorks/devWorks2/Examen/ExamenSoC/export/ExamenSoC/hw/ExamenSoC.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/Debug/ExamenSoc_APP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:28:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:28:22 INFO  : 'con' command is executed.
+10:28:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+10:28:22 INFO  : Launch script is exported to file 'C:\PXL\devWorks\devWorks2\Examen\ExamenSoc_APP_system\_ide\scripts\debugger_examensoc_app-default.tcl'
+10:30:02 INFO  : Checking for BSP changes to sync application flags for project 'ExamenSoc_APP'...
+10:30:24 INFO  : Disconnected from the channel tcfchan#13.
+10:30:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:30:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+10:30:34 ERROR : Could not find Jtag device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+10:30:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:30:38 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+10:30:38 INFO  : 'jtag frequency' command is executed.
+10:30:38 INFO  : Context for 'APU' is selected.
+10:30:38 INFO  : System reset is completed.
+10:30:41 INFO  : 'after 3000' command is executed.
+10:30:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+10:30:44 INFO  : Device configured successfully with "C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/bitstream/ExamenSoC.bit"
+10:30:44 INFO  : Context for 'APU' is selected.
+10:30:44 INFO  : Hardware design and registers information is loaded from 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoC/export/ExamenSoC/hw/ExamenSoC.xsa'.
+10:30:44 INFO  : 'configparams force-mem-access 1' command is executed.
+10:30:44 INFO  : Context for 'APU' is selected.
+10:30:44 INFO  : Sourcing of 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/psinit/ps7_init.tcl' is done.
+10:30:44 INFO  : 'ps7_init' command is executed.
+10:30:44 INFO  : 'ps7_post_config' command is executed.
+10:30:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:30:44 INFO  : The application 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/Debug/ExamenSoc_APP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:30:44 INFO  : 'configparams force-mem-access 0' command is executed.
+10:30:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/bitstream/ExamenSoC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/PXL/devWorks/devWorks2/Examen/ExamenSoC/export/ExamenSoC/hw/ExamenSoC.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/Debug/ExamenSoc_APP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:30:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:30:44 INFO  : 'con' command is executed.
+10:30:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+10:30:44 INFO  : Launch script is exported to file 'C:\PXL\devWorks\devWorks2\Examen\ExamenSoc_APP_system\_ide\scripts\debugger_examensoc_app-default.tcl'
+10:32:38 INFO  : Checking for BSP changes to sync application flags for project 'ExamenSoc_APP'...
+10:32:43 INFO  : Disconnected from the channel tcfchan#14.
+10:32:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:32:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+10:32:53 ERROR : Could not find Jtag device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+10:32:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:32:58 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+10:32:58 INFO  : 'jtag frequency' command is executed.
+10:32:58 INFO  : Context for 'APU' is selected.
+10:32:58 INFO  : System reset is completed.
+10:33:01 INFO  : 'after 3000' command is executed.
+10:33:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+10:33:03 INFO  : Device configured successfully with "C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/bitstream/ExamenSoC.bit"
+10:33:03 INFO  : Context for 'APU' is selected.
+10:33:03 INFO  : Hardware design and registers information is loaded from 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoC/export/ExamenSoC/hw/ExamenSoC.xsa'.
+10:33:03 INFO  : 'configparams force-mem-access 1' command is executed.
+10:33:03 INFO  : Context for 'APU' is selected.
+10:33:03 INFO  : Sourcing of 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/psinit/ps7_init.tcl' is done.
+10:33:04 INFO  : 'ps7_init' command is executed.
+10:33:04 INFO  : 'ps7_post_config' command is executed.
+10:33:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:33:04 INFO  : The application 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/Debug/ExamenSoc_APP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:33:04 INFO  : 'configparams force-mem-access 0' command is executed.
+10:33:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/bitstream/ExamenSoC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/PXL/devWorks/devWorks2/Examen/ExamenSoC/export/ExamenSoC/hw/ExamenSoC.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/Debug/ExamenSoc_APP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:33:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:33:04 INFO  : 'con' command is executed.
+10:33:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+10:33:04 INFO  : Launch script is exported to file 'C:\PXL\devWorks\devWorks2\Examen\ExamenSoc_APP_system\_ide\scripts\debugger_examensoc_app-default.tcl'
+10:33:39 INFO  : Checking for BSP changes to sync application flags for project 'ExamenSoc_APP'...
+10:33:43 INFO  : Disconnected from the channel tcfchan#15.
+10:33:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:33:44 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+10:33:45 INFO  : 'jtag frequency' command is executed.
+10:33:45 INFO  : Context for 'APU' is selected.
+10:33:45 INFO  : System reset is completed.
+10:33:48 INFO  : 'after 3000' command is executed.
+10:33:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+10:33:50 INFO  : Device configured successfully with "C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/bitstream/ExamenSoC.bit"
+10:33:50 INFO  : Context for 'APU' is selected.
+10:33:50 INFO  : Hardware design and registers information is loaded from 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoC/export/ExamenSoC/hw/ExamenSoC.xsa'.
+10:33:50 INFO  : 'configparams force-mem-access 1' command is executed.
+10:33:50 INFO  : Context for 'APU' is selected.
+10:33:50 INFO  : Sourcing of 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/psinit/ps7_init.tcl' is done.
+10:33:51 INFO  : 'ps7_init' command is executed.
+10:33:51 INFO  : 'ps7_post_config' command is executed.
+10:33:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:33:51 INFO  : The application 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/Debug/ExamenSoc_APP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:33:51 INFO  : 'configparams force-mem-access 0' command is executed.
+10:33:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/bitstream/ExamenSoC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/PXL/devWorks/devWorks2/Examen/ExamenSoC/export/ExamenSoC/hw/ExamenSoC.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/Debug/ExamenSoc_APP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:33:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:33:51 INFO  : 'con' command is executed.
+10:33:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+10:33:51 INFO  : Launch script is exported to file 'C:\PXL\devWorks\devWorks2\Examen\ExamenSoc_APP_system\_ide\scripts\debugger_examensoc_app-default.tcl'
+10:40:07 INFO  : Checking for BSP changes to sync application flags for project 'ExamenSoc_APP'...
+10:40:12 INFO  : Disconnected from the channel tcfchan#16.
+10:40:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:40:14 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+10:40:14 INFO  : 'jtag frequency' command is executed.
+10:40:14 INFO  : Context for 'APU' is selected.
+10:40:14 INFO  : System reset is completed.
+10:40:17 INFO  : 'after 3000' command is executed.
+10:40:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+10:40:20 INFO  : Device configured successfully with "C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/bitstream/ExamenSoC.bit"
+10:40:20 INFO  : Context for 'APU' is selected.
+10:40:20 INFO  : Hardware design and registers information is loaded from 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoC/export/ExamenSoC/hw/ExamenSoC.xsa'.
+10:40:20 INFO  : 'configparams force-mem-access 1' command is executed.
+10:40:20 INFO  : Context for 'APU' is selected.
+10:40:20 INFO  : Sourcing of 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/psinit/ps7_init.tcl' is done.
+10:40:20 INFO  : 'ps7_init' command is executed.
+10:40:20 INFO  : 'ps7_post_config' command is executed.
+10:40:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:40:20 INFO  : The application 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/Debug/ExamenSoc_APP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:40:20 INFO  : 'configparams force-mem-access 0' command is executed.
+10:40:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/bitstream/ExamenSoC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/PXL/devWorks/devWorks2/Examen/ExamenSoC/export/ExamenSoC/hw/ExamenSoC.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/Debug/ExamenSoc_APP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:40:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:40:21 INFO  : 'con' command is executed.
+10:40:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+10:40:21 INFO  : Launch script is exported to file 'C:\PXL\devWorks\devWorks2\Examen\ExamenSoc_APP_system\_ide\scripts\debugger_examensoc_app-default.tcl'
+10:41:16 INFO  : Checking for BSP changes to sync application flags for project 'ExamenSoc_APP'...
+10:41:20 INFO  : Disconnected from the channel tcfchan#17.
+10:41:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:41:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+10:41:31 ERROR : Could not find Jtag device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+10:41:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:41:34 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+10:41:34 INFO  : 'jtag frequency' command is executed.
+10:41:34 INFO  : Context for 'APU' is selected.
+10:41:34 INFO  : System reset is completed.
+10:41:37 INFO  : 'after 3000' command is executed.
+10:41:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+10:41:40 INFO  : Device configured successfully with "C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/bitstream/ExamenSoC.bit"
+10:41:40 INFO  : Context for 'APU' is selected.
+10:41:40 INFO  : Hardware design and registers information is loaded from 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoC/export/ExamenSoC/hw/ExamenSoC.xsa'.
+10:41:40 INFO  : 'configparams force-mem-access 1' command is executed.
+10:41:40 INFO  : Context for 'APU' is selected.
+10:41:40 INFO  : Sourcing of 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/psinit/ps7_init.tcl' is done.
+10:41:40 INFO  : 'ps7_init' command is executed.
+10:41:40 INFO  : 'ps7_post_config' command is executed.
+10:41:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:41:40 INFO  : The application 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/Debug/ExamenSoc_APP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:41:40 INFO  : 'configparams force-mem-access 0' command is executed.
+10:41:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/bitstream/ExamenSoC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/PXL/devWorks/devWorks2/Examen/ExamenSoC/export/ExamenSoC/hw/ExamenSoC.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/Debug/ExamenSoc_APP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:41:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:41:40 INFO  : 'con' command is executed.
+10:41:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+10:41:40 INFO  : Launch script is exported to file 'C:\PXL\devWorks\devWorks2\Examen\ExamenSoc_APP_system\_ide\scripts\debugger_examensoc_app-default.tcl'
+10:42:35 INFO  : Checking for BSP changes to sync application flags for project 'ExamenSoc_APP'...
+10:42:40 INFO  : Disconnected from the channel tcfchan#18.
+10:42:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:42:41 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+10:42:41 INFO  : 'jtag frequency' command is executed.
+10:42:41 INFO  : Context for 'APU' is selected.
+10:42:41 INFO  : System reset is completed.
+10:42:44 INFO  : 'after 3000' command is executed.
+10:42:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+10:42:46 INFO  : Device configured successfully with "C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/bitstream/ExamenSoC.bit"
+10:42:46 INFO  : Context for 'APU' is selected.
+10:42:46 INFO  : Hardware design and registers information is loaded from 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoC/export/ExamenSoC/hw/ExamenSoC.xsa'.
+10:42:46 INFO  : 'configparams force-mem-access 1' command is executed.
+10:42:46 INFO  : Context for 'APU' is selected.
+10:42:46 INFO  : Sourcing of 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/psinit/ps7_init.tcl' is done.
+10:42:47 INFO  : 'ps7_init' command is executed.
+10:42:47 INFO  : 'ps7_post_config' command is executed.
+10:42:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:42:47 INFO  : The application 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/Debug/ExamenSoc_APP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:42:47 INFO  : 'configparams force-mem-access 0' command is executed.
+10:42:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/bitstream/ExamenSoC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/PXL/devWorks/devWorks2/Examen/ExamenSoC/export/ExamenSoC/hw/ExamenSoC.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/Debug/ExamenSoc_APP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:42:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:42:47 INFO  : 'con' command is executed.
+10:42:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+10:42:47 INFO  : Launch script is exported to file 'C:\PXL\devWorks\devWorks2\Examen\ExamenSoc_APP_system\_ide\scripts\debugger_examensoc_app-default.tcl'
+10:44:05 INFO  : Checking for BSP changes to sync application flags for project 'ExamenSoc_APP'...
+10:45:16 INFO  : Projects exported to 'C:\PXL\devWorks\devWorks2\vitis_export_archive.ide.zip'
+10:46:50 INFO  : Disconnected from the channel tcfchan#19.
+10:46:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:46:51 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+10:46:51 INFO  : 'jtag frequency' command is executed.
+10:46:51 INFO  : Context for 'APU' is selected.
+10:46:51 INFO  : System reset is completed.
+10:46:54 INFO  : 'after 3000' command is executed.
+10:46:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+10:46:57 INFO  : Device configured successfully with "C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/bitstream/ExamenSoC.bit"
+10:46:57 INFO  : Context for 'APU' is selected.
+10:46:57 INFO  : Hardware design and registers information is loaded from 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoC/export/ExamenSoC/hw/ExamenSoC.xsa'.
+10:46:57 INFO  : 'configparams force-mem-access 1' command is executed.
+10:46:57 INFO  : Context for 'APU' is selected.
+10:46:57 INFO  : Sourcing of 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/psinit/ps7_init.tcl' is done.
+10:46:57 INFO  : 'ps7_init' command is executed.
+10:46:57 INFO  : 'ps7_post_config' command is executed.
+10:46:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:46:57 INFO  : The application 'C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/Debug/ExamenSoc_APP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:46:57 INFO  : 'configparams force-mem-access 0' command is executed.
+10:46:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/bitstream/ExamenSoC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/PXL/devWorks/devWorks2/Examen/ExamenSoC/export/ExamenSoC/hw/ExamenSoC.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/PXL/devWorks/devWorks2/Examen/ExamenSoc_APP/Debug/ExamenSoc_APP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:46:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:46:57 INFO  : 'con' command is executed.
+10:46:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+10:46:57 INFO  : Launch script is exported to file 'C:\PXL\devWorks\devWorks2\Examen\ExamenSoc_APP_system\_ide\scripts\debugger_examensoc_app-default.tcl'
+10:51:56 INFO  : Disconnected from the channel tcfchan#20.

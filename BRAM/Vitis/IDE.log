@@ -1,0 +1,29 @@
+12:25:19 DEBUG : Logs will be stored at 'C:/PXL/devWorks/devWorks2/BRAM/Vitis/IDE.log'.
+12:25:26 INFO  : Platform repository initialization has completed.
+12:25:26 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\PXL\devWorks\devWorks2\BRAM\Vitis\temp_xsdb_launch_script.tcl
+12:25:27 ERROR : (XSDB Server)'\gnu\microblaze\lin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+12:25:27 ERROR : (XSDB Server)'\gnu\microblaze\nt\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+'\gnuwin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+12:25:27 INFO  : Registering command handlers for Vitis TCF services
+12:25:33 INFO  : XSCT server has started successfully.
+12:25:33 INFO  : plnx-install-location is set to ''
+12:25:42 INFO  : Successfully done setting XSCT server connection channel  
+12:25:42 INFO  : Successfully done query RDI_DATADIR 
+12:25:42 INFO  : Successfully done setting workspace for the tool. 
+12:26:28 INFO  : Result from executing command 'getProjects': BRAM
+12:26:28 INFO  : Result from executing command 'getPlatforms': 
+12:26:28 WARN  : An unexpected exception occurred in the module 'platform project logging'
+12:26:29 INFO  : Platform 'BRAM' is added to custom repositories.
+12:26:51 INFO  : Platform 'BRAM' is added to custom repositories.
+12:27:40 INFO  : Result from executing command 'getProjects': BRAM
+12:27:40 INFO  : Result from executing command 'getPlatforms': BRAM|C:/PXL/devWorks/devWorks2/BRAM/Vitis/BRAM/export/BRAM/BRAM.xpfm
+12:28:00 INFO  : Checking for BSP changes to sync application flags for project 'BRAM_APP'...
+12:32:01 INFO  : Inferring section assignments and sizes from elf file: C:\PXL\devWorks\devWorks2\BRAM\Vitis\BRAM_APP\Debug\BRAM_APP.elf
+12:32:31 INFO  : Successfully generated C:\PXL\devWorks\devWorks2\BRAM\Vitis\BRAM_APP\src\lscript.ld.
+12:32:31 INFO  : Applying linker script to all configurations of project BRAM_APP.
+12:32:31 INFO  : Setting rebuild state to true for all configurations of project BRAM_APP.

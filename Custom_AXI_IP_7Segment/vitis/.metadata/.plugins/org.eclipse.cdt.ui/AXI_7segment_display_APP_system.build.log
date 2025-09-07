@@ -1,0 +1,17 @@
+11:10:10 **** Incremental Build of configuration Debug for project AXI_7segment_display_APP_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 50945 C:/PXL/devWorks/devWorks2/Custom_AXI_IP_7Segment/vitis/7Segment_display/export/7Segment_display/7Segment_display.xpfm standalone_ps7_cortexa9_0 C:/PXL/devWorks/devWorks2/Custom_AXI_IP_7Segment/vitis/AXI_7segment_display_APP_system/Debug/system.bif
+'\gnu\microblaze\lin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+'\gnu\microblaze\nt\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+'\gnuwin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+sdcard_gen --xpfm C:/PXL/devWorks/devWorks2/Custom_AXI_IP_7Segment/vitis/7Segment_display/export/7Segment_display/7Segment_display.xpfm --sys_config 7Segment_display --bif C:/PXL/devWorks/devWorks2/Custom_AXI_IP_7Segment/vitis/AXI_7segment_display_APP_system/Debug/system.bif --bitstream C:/PXL/devWorks/devWorks2/Custom_AXI_IP_7Segment/vitis/AXI_7segment_display_APP/_ide/bitstream/7Segment_display.bit --elf C:/PXL/devWorks/devWorks2/Custom_AXI_IP_7Segment/vitis/AXI_7segment_display_APP/Debug/AXI_7segment_display_APP.elf,ps7_cortexa9_0
+creating BOOT.BIN using C:/PXL/devWorks/devWorks2/Custom_AXI_IP_7Segment/vitis/AXI_7segment_display_APP/_ide/bitstream/7Segment_display.bit
+Error intializing SD boot data : Software platform XML error, sdx:qemuArguments value "7Segment_display/qemu/qemu_args.txt" path does not exist C:/PXL/devWorks/devWorks2/Custom_AXI_IP_7Segment/vitis/7Segment_display/export/7Segment_display/sw/7Segment_display/qemu/qemu_args.txt, platform path C:/PXL/devWorks/devWorks2/Custom_AXI_IP_7Segment/vitis/7Segment_display/export/7Segment_display, sdx:configuration 7Segment_display, sdx:image standard
+make: *** [makefile:37: package] Error 1
+
+11:10:15 Build Finished (took 4s.876ms)
+

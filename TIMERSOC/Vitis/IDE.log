@@ -1,0 +1,287 @@
+10:08:30 DEBUG : Logs will be stored at 'C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/IDE.log'.
+10:08:34 INFO  : Platform repository initialization has completed.
+10:08:34 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\PXL\devWorks\devWorks2\TIMERSOC\Vitis\temp_xsdb_launch_script.tcl
+10:08:34 ERROR : (XSDB Server)'\gnu\microblaze\lin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+10:08:34 ERROR : (XSDB Server)'\gnu\microblaze\nt\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+10:08:34 ERROR : (XSDB Server)'\gnuwin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+10:08:34 INFO  : Registering command handlers for Vitis TCF services
+10:08:37 INFO  : XSCT server has started successfully.
+10:08:37 INFO  : Successfully done setting XSCT server connection channel  
+10:08:37 INFO  : plnx-install-location is set to ''
+10:08:37 INFO  : Successfully done query RDI_DATADIR 
+10:08:37 INFO  : Successfully done setting workspace for the tool. 
+10:09:28 INFO  : Result from executing command 'getProjects': design_1_wrapper
+10:09:28 INFO  : Result from executing command 'getPlatforms': 
+10:09:28 WARN  : An unexpected exception occurred in the module 'platform project logging'
+10:09:28 INFO  : Platform 'design_1_wrapper' is added to custom repositories.
+10:09:38 INFO  : Platform 'design_1_wrapper' is added to custom repositories.
+10:10:18 INFO  : Result from executing command 'getProjects': design_1_wrapper
+10:10:18 INFO  : Result from executing command 'getPlatforms': design_1_wrapper|C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+10:12:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:12:52 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+10:12:52 INFO  : 'jtag frequency' command is executed.
+10:12:52 INFO  : Context for 'APU' is selected.
+10:12:52 INFO  : System reset is completed.
+10:12:55 INFO  : 'after 3000' command is executed.
+10:12:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+10:12:58 INFO  : Device configured successfully with "C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/TIMERSOC_APP/_ide/bitstream/design_1_wrapper.bit"
+10:12:58 INFO  : Context for 'APU' is selected.
+10:12:58 INFO  : Hardware design and registers information is loaded from 'C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+10:12:58 INFO  : 'configparams force-mem-access 1' command is executed.
+10:12:58 INFO  : Context for 'APU' is selected.
+10:12:58 INFO  : Sourcing of 'C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/TIMERSOC_APP/_ide/psinit/ps7_init.tcl' is done.
+10:12:58 INFO  : 'ps7_init' command is executed.
+10:12:58 INFO  : 'ps7_post_config' command is executed.
+10:12:58 INFO  : 'configparams force-mem-access 0' command is executed.
+10:12:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/TIMERSOC_APP/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/TIMERSOC_APP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:12:59 INFO  : Launch script is exported to file 'C:\PXL\devWorks\devWorks2\TIMERSOC\Vitis\TIMERSOC_APP_system\_ide\scripts\debugger_timersoc_app-default.tcl'
+10:14:38 INFO  : Disconnected from the channel tcfchan#2.
+10:14:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:14:54 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+10:14:54 INFO  : 'jtag frequency' command is executed.
+10:14:54 INFO  : Context for 'APU' is selected.
+10:14:54 INFO  : System reset is completed.
+10:14:57 INFO  : 'after 3000' command is executed.
+10:14:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+10:14:59 INFO  : Device configured successfully with "C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/TIMERSOC_APP/_ide/bitstream/design_1_wrapper.bit"
+10:14:59 INFO  : Context for 'APU' is selected.
+10:14:59 INFO  : Hardware design and registers information is loaded from 'C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+10:14:59 INFO  : 'configparams force-mem-access 1' command is executed.
+10:14:59 INFO  : Context for 'APU' is selected.
+10:14:59 INFO  : Sourcing of 'C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/TIMERSOC_APP/_ide/psinit/ps7_init.tcl' is done.
+10:15:00 INFO  : 'ps7_init' command is executed.
+10:15:00 INFO  : 'ps7_post_config' command is executed.
+10:15:00 INFO  : 'configparams force-mem-access 0' command is executed.
+10:15:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/TIMERSOC_APP/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/TIMERSOC_APP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:15:00 INFO  : Launch script is exported to file 'C:\PXL\devWorks\devWorks2\TIMERSOC\Vitis\TIMERSOC_APP_system\_ide\scripts\debugger_timersoc_app-default.tcl'
+10:16:42 INFO  : Disconnected from the channel tcfchan#3.
+10:16:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:16:46 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+10:16:46 INFO  : 'jtag frequency' command is executed.
+10:16:46 INFO  : Context for 'APU' is selected.
+10:16:46 INFO  : System reset is completed.
+10:16:49 INFO  : 'after 3000' command is executed.
+10:16:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+10:16:51 INFO  : Device configured successfully with "C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/TIMERSOC_APP/_ide/bitstream/design_1_wrapper.bit"
+10:16:51 INFO  : Context for 'APU' is selected.
+10:16:51 INFO  : Hardware design and registers information is loaded from 'C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+10:16:51 INFO  : 'configparams force-mem-access 1' command is executed.
+10:16:51 INFO  : Context for 'APU' is selected.
+10:16:51 INFO  : Sourcing of 'C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/TIMERSOC_APP/_ide/psinit/ps7_init.tcl' is done.
+10:16:52 INFO  : 'ps7_init' command is executed.
+10:16:52 INFO  : 'ps7_post_config' command is executed.
+10:16:52 INFO  : 'configparams force-mem-access 0' command is executed.
+10:16:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/TIMERSOC_APP/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/TIMERSOC_APP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:16:52 INFO  : Launch script is exported to file 'C:\PXL\devWorks\devWorks2\TIMERSOC\Vitis\TIMERSOC_APP_system\_ide\scripts\debugger_timersoc_app-default.tcl'
+10:17:47 INFO  : Disconnected from the channel tcfchan#4.
+10:17:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:17:50 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+10:17:50 INFO  : 'jtag frequency' command is executed.
+10:17:50 INFO  : Context for 'APU' is selected.
+10:17:50 INFO  : System reset is completed.
+10:17:53 INFO  : 'after 3000' command is executed.
+10:17:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+10:17:56 INFO  : Device configured successfully with "C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/TIMERSOC_APP/_ide/bitstream/design_1_wrapper.bit"
+10:17:56 INFO  : Context for 'APU' is selected.
+10:17:56 INFO  : Hardware design and registers information is loaded from 'C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+10:17:56 INFO  : 'configparams force-mem-access 1' command is executed.
+10:17:56 INFO  : Context for 'APU' is selected.
+10:17:56 INFO  : Sourcing of 'C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/TIMERSOC_APP/_ide/psinit/ps7_init.tcl' is done.
+10:17:56 INFO  : 'ps7_init' command is executed.
+10:17:56 INFO  : 'ps7_post_config' command is executed.
+10:17:56 INFO  : 'configparams force-mem-access 0' command is executed.
+10:17:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/TIMERSOC_APP/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/TIMERSOC_APP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:17:56 INFO  : Launch script is exported to file 'C:\PXL\devWorks\devWorks2\TIMERSOC\Vitis\TIMERSOC_APP_system\_ide\scripts\debugger_timersoc_app-default.tcl'
+10:18:18 INFO  : Checking for BSP changes to sync application flags for project 'TIMERSOC_APP'...
+10:18:46 INFO  : Disconnected from the channel tcfchan#5.
+10:18:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:18:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+10:18:56 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+10:21:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:21:41 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+10:21:41 INFO  : 'jtag frequency' command is executed.
+10:21:41 INFO  : Context for 'APU' is selected.
+10:21:41 INFO  : System reset is completed.
+10:21:44 INFO  : 'after 3000' command is executed.
+10:21:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+10:21:47 INFO  : Device configured successfully with "C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/TIMERSOC_APP/_ide/bitstream/design_1_wrapper.bit"
+10:21:47 INFO  : Context for 'APU' is selected.
+10:21:47 INFO  : Hardware design and registers information is loaded from 'C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+10:21:47 INFO  : 'configparams force-mem-access 1' command is executed.
+10:21:47 INFO  : Context for 'APU' is selected.
+10:21:47 INFO  : Sourcing of 'C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/TIMERSOC_APP/_ide/psinit/ps7_init.tcl' is done.
+10:21:47 INFO  : 'ps7_init' command is executed.
+10:21:47 INFO  : 'ps7_post_config' command is executed.
+10:21:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:21:47 INFO  : The application 'C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/TIMERSOC_APP/Debug/TIMERSOC_APP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:21:47 INFO  : 'configparams force-mem-access 0' command is executed.
+10:21:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/TIMERSOC_APP/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/TIMERSOC_APP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/TIMERSOC_APP/Debug/TIMERSOC_APP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:21:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:21:48 INFO  : 'con' command is executed.
+10:21:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+10:21:48 INFO  : Launch script is exported to file 'C:\PXL\devWorks\devWorks2\TIMERSOC\Vitis\TIMERSOC_APP_system\_ide\scripts\debugger_timersoc_app-default.tcl'
+10:23:29 INFO  : Checking for BSP changes to sync application flags for project 'TIMERSOC_APP'...
+10:24:01 INFO  : Disconnected from the channel tcfchan#7.
+10:24:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:24:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+10:24:12 ERROR : Could not find Jtag device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+10:24:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:24:58 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+10:24:58 INFO  : 'jtag frequency' command is executed.
+10:24:58 INFO  : Context for 'APU' is selected.
+10:24:58 INFO  : System reset is completed.
+10:25:01 INFO  : 'after 3000' command is executed.
+10:25:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+10:25:04 INFO  : Device configured successfully with "C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/TIMERSOC_APP/_ide/bitstream/design_1_wrapper.bit"
+10:25:04 INFO  : Context for 'APU' is selected.
+10:25:04 INFO  : Hardware design and registers information is loaded from 'C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+10:25:04 INFO  : 'configparams force-mem-access 1' command is executed.
+10:25:04 INFO  : Context for 'APU' is selected.
+10:25:04 INFO  : Sourcing of 'C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/TIMERSOC_APP/_ide/psinit/ps7_init.tcl' is done.
+10:25:04 INFO  : 'ps7_init' command is executed.
+10:25:04 INFO  : 'ps7_post_config' command is executed.
+10:25:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:25:04 INFO  : The application 'C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/TIMERSOC_APP/Debug/TIMERSOC_APP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:25:04 INFO  : 'configparams force-mem-access 0' command is executed.
+10:25:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/TIMERSOC_APP/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/TIMERSOC_APP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/PXL/devWorks/devWorks2/TIMERSOC/Vitis/TIMERSOC_APP/Debug/TIMERSOC_APP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:25:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:25:04 INFO  : 'con' command is executed.
+10:25:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+10:25:04 INFO  : Launch script is exported to file 'C:\PXL\devWorks\devWorks2\TIMERSOC\Vitis\TIMERSOC_APP_system\_ide\scripts\debugger_timersoc_app-default.tcl'
+10:26:28 INFO  : Disconnected from the channel tcfchan#9.

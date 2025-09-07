@@ -1,0 +1,533 @@
+09:11:27 DEBUG : Logs will be stored at 'C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/IDE.log'.
+09:12:09 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\PXL\devWorks\devWorks2\AXI_IP_SOC\Vitis\temp_xsdb_launch_script.tcl
+09:12:09 INFO  : Platform repository initialization has completed.
+09:12:09 INFO  : Registering command handlers for Vitis TCF services
+09:12:09 ERROR : (XSDB Server)'\gnu\microblaze\lin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+09:12:09 ERROR : (XSDB Server)'\gnu\microblaze\nt\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+'\gnuwin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+09:12:13 INFO  : XSCT server has started successfully.
+09:12:13 INFO  : plnx-install-location is set to ''
+09:12:15 INFO  : Successfully done setting XSCT server connection channel  
+09:12:15 INFO  : Successfully done query RDI_DATADIR 
+09:12:15 INFO  : Successfully done setting workspace for the tool. 
+09:13:23 INFO  : Result from executing command 'getProjects': AXI_IP
+09:13:23 INFO  : Result from executing command 'getPlatforms': 
+09:13:23 WARN  : An unexpected exception occurred in the module 'platform project logging'
+09:13:23 INFO  : Platform 'AXI_IP' is added to custom repositories.
+09:13:33 INFO  : Platform 'AXI_IP' is added to custom repositories.
+09:16:03 INFO  : Result from executing command 'getProjects': AXI_IP
+09:16:03 INFO  : Result from executing command 'getPlatforms': AXI_IP|C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/AXI_IP/export/AXI_IP/AXI_IP.xpfm
+09:17:22 INFO  : Checking for BSP changes to sync application flags for project 'Custom_AXI_IP'...
+09:21:08 INFO  : Checking for BSP changes to sync application flags for project 'Custom_AXI_IP'...
+09:21:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:21:26 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+09:21:26 INFO  : 'jtag frequency' command is executed.
+09:21:26 INFO  : Context for 'APU' is selected.
+09:21:26 INFO  : System reset is completed.
+09:21:29 INFO  : 'after 3000' command is executed.
+09:21:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:21:29 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+09:21:29 INFO  : 'jtag frequency' command is executed.
+09:21:30 INFO  : Context for 'APU' is selected.
+09:21:30 INFO  : System reset is completed.
+09:21:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+09:21:33 INFO  : 'after 3000' command is executed.
+09:21:35 INFO  : Device configured successfully with "C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/bitstream/AXI_IP.bit"
+09:21:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+09:21:37 INFO  : Device configured successfully with "C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/bitstream/AXI_IP.bit"
+09:21:37 INFO  : Context for 'APU' is selected.
+09:21:37 INFO  : Hardware design and registers information is loaded from 'C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/AXI_IP/export/AXI_IP/hw/AXI_IP.xsa'.
+09:21:37 INFO  : Context for 'APU' is selected.
+09:21:37 INFO  : 'configparams force-mem-access 1' command is executed.
+09:21:38 INFO  : Hardware design and registers information is loaded from 'C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/AXI_IP/export/AXI_IP/hw/AXI_IP.xsa'.
+09:21:38 INFO  : Context for 'APU' is selected.
+09:21:38 INFO  : 'configparams force-mem-access 1' command is executed.
+09:21:38 INFO  : Sourcing of 'C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/psinit/ps7_init.tcl' is done.
+09:21:38 INFO  : Context for 'APU' is selected.
+09:21:38 INFO  : 'ps7_init' command is executed.
+09:21:38 INFO  : Sourcing of 'C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/psinit/ps7_init.tcl' is done.
+09:21:38 INFO  : 'ps7_post_config' command is executed.
+09:21:38 INFO  : 'ps7_init' command is executed.
+09:21:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:21:38 INFO  : 'ps7_post_config' command is executed.
+09:21:39 INFO  : The application 'C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/Debug/Custom_AXI_IP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:21:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:21:39 INFO  : 'configparams force-mem-access 0' command is executed.
+09:21:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/bitstream/AXI_IP.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/AXI_IP/export/AXI_IP/hw/AXI_IP.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/Debug/Custom_AXI_IP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:21:39 INFO  : The application 'C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/Debug/Custom_AXI_IP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:21:39 INFO  : 'configparams force-mem-access 0' command is executed.
+09:21:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/bitstream/AXI_IP.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/AXI_IP/export/AXI_IP/hw/AXI_IP.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/Debug/Custom_AXI_IP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:21:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:21:39 INFO  : 'con' command is executed.
+09:21:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+09:21:39 INFO  : Launch script is exported to file 'C:\PXL\devWorks\devWorks2\AXI_IP_SOC\Vitis\Custom_AXI_IP_system\_ide\scripts\debugger_custom_axi_ip-default.tcl'
+09:21:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:21:39 ERROR : Already running
+09:22:24 INFO  : Disconnected from the channel tcfchan#2.
+09:22:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:22:25 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+09:22:25 INFO  : 'jtag frequency' command is executed.
+09:22:25 INFO  : Context for 'APU' is selected.
+09:22:25 INFO  : System reset is completed.
+09:22:28 INFO  : 'after 3000' command is executed.
+09:22:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+09:22:31 INFO  : Device configured successfully with "C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/bitstream/AXI_IP.bit"
+09:22:31 INFO  : Context for 'APU' is selected.
+09:22:31 INFO  : Hardware design and registers information is loaded from 'C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/AXI_IP/export/AXI_IP/hw/AXI_IP.xsa'.
+09:22:31 INFO  : 'configparams force-mem-access 1' command is executed.
+09:22:31 INFO  : Context for 'APU' is selected.
+09:22:31 INFO  : Sourcing of 'C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/psinit/ps7_init.tcl' is done.
+09:22:31 INFO  : 'ps7_init' command is executed.
+09:22:31 INFO  : 'ps7_post_config' command is executed.
+09:22:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:22:31 INFO  : The application 'C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/Debug/Custom_AXI_IP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:22:32 INFO  : 'configparams force-mem-access 0' command is executed.
+09:22:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/bitstream/AXI_IP.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/AXI_IP/export/AXI_IP/hw/AXI_IP.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/Debug/Custom_AXI_IP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:22:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:22:32 INFO  : 'con' command is executed.
+09:22:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+09:22:32 INFO  : Launch script is exported to file 'C:\PXL\devWorks\devWorks2\AXI_IP_SOC\Vitis\Custom_AXI_IP_system\_ide\scripts\debugger_custom_axi_ip-default.tcl'
+09:23:26 INFO  : Disconnected from the channel tcfchan#3.
+09:23:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:23:27 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+09:23:27 INFO  : 'jtag frequency' command is executed.
+09:23:27 INFO  : Context for 'APU' is selected.
+09:23:27 INFO  : System reset is completed.
+09:23:30 INFO  : 'after 3000' command is executed.
+09:23:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+09:23:32 INFO  : Device configured successfully with "C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/bitstream/AXI_IP.bit"
+09:23:33 INFO  : Context for 'APU' is selected.
+09:23:33 INFO  : Hardware design and registers information is loaded from 'C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/AXI_IP/export/AXI_IP/hw/AXI_IP.xsa'.
+09:23:33 INFO  : 'configparams force-mem-access 1' command is executed.
+09:23:33 INFO  : Context for 'APU' is selected.
+09:23:33 INFO  : Sourcing of 'C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/psinit/ps7_init.tcl' is done.
+09:23:33 INFO  : 'ps7_init' command is executed.
+09:23:33 INFO  : 'ps7_post_config' command is executed.
+09:23:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:23:33 INFO  : The application 'C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/Debug/Custom_AXI_IP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:23:33 INFO  : 'configparams force-mem-access 0' command is executed.
+09:23:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/bitstream/AXI_IP.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/AXI_IP/export/AXI_IP/hw/AXI_IP.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/Debug/Custom_AXI_IP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:23:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:23:33 INFO  : 'con' command is executed.
+09:23:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+09:23:33 INFO  : Launch script is exported to file 'C:\PXL\devWorks\devWorks2\AXI_IP_SOC\Vitis\Custom_AXI_IP_system\_ide\scripts\debugger_custom_axi_ip-default.tcl'
+09:26:45 INFO  : Disconnected from the channel tcfchan#4.
+09:26:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:26:47 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+09:26:47 INFO  : 'jtag frequency' command is executed.
+09:26:47 INFO  : Context for 'APU' is selected.
+09:26:47 INFO  : System reset is completed.
+09:26:50 INFO  : 'after 3000' command is executed.
+09:26:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+09:26:52 INFO  : Device configured successfully with "C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/bitstream/AXI_IP.bit"
+09:26:52 INFO  : Context for 'APU' is selected.
+09:26:52 INFO  : Hardware design and registers information is loaded from 'C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/AXI_IP/export/AXI_IP/hw/AXI_IP.xsa'.
+09:26:52 INFO  : 'configparams force-mem-access 1' command is executed.
+09:26:52 INFO  : Context for 'APU' is selected.
+09:26:52 INFO  : Sourcing of 'C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/psinit/ps7_init.tcl' is done.
+09:26:52 INFO  : 'ps7_init' command is executed.
+09:26:52 INFO  : 'ps7_post_config' command is executed.
+09:26:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:26:53 INFO  : The application 'C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/Debug/Custom_AXI_IP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:26:53 INFO  : 'configparams force-mem-access 0' command is executed.
+09:26:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/bitstream/AXI_IP.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/AXI_IP/export/AXI_IP/hw/AXI_IP.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/Debug/Custom_AXI_IP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:26:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:26:53 INFO  : 'con' command is executed.
+09:26:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+09:26:53 INFO  : Launch script is exported to file 'C:\PXL\devWorks\devWorks2\AXI_IP_SOC\Vitis\Custom_AXI_IP_system\_ide\scripts\debugger_custom_axi_ip-default.tcl'
+09:28:32 ERROR : (XSDB Server)invalid command name "+"
+
+09:32:29 INFO  : Disconnected from the channel tcfchan#5.
+09:32:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:32:31 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+09:32:31 INFO  : 'jtag frequency' command is executed.
+09:32:31 INFO  : Context for 'APU' is selected.
+09:32:31 INFO  : System reset is completed.
+09:32:34 INFO  : 'after 3000' command is executed.
+09:32:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+09:32:36 INFO  : Device configured successfully with "C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/bitstream/AXI_IP.bit"
+09:32:36 INFO  : Context for 'APU' is selected.
+09:32:36 INFO  : Hardware design and registers information is loaded from 'C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/AXI_IP/export/AXI_IP/hw/AXI_IP.xsa'.
+09:32:36 INFO  : 'configparams force-mem-access 1' command is executed.
+09:32:36 INFO  : Context for 'APU' is selected.
+09:32:36 INFO  : Sourcing of 'C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/psinit/ps7_init.tcl' is done.
+09:32:37 INFO  : 'ps7_init' command is executed.
+09:32:37 INFO  : 'ps7_post_config' command is executed.
+09:32:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:32:37 INFO  : The application 'C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/Debug/Custom_AXI_IP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:32:37 INFO  : 'configparams force-mem-access 0' command is executed.
+09:32:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/bitstream/AXI_IP.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/AXI_IP/export/AXI_IP/hw/AXI_IP.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/Debug/Custom_AXI_IP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:32:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:32:37 INFO  : 'con' command is executed.
+09:32:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+09:32:37 INFO  : Launch script is exported to file 'C:\PXL\devWorks\devWorks2\AXI_IP_SOC\Vitis\Custom_AXI_IP_system\_ide\scripts\debugger_custom_axi_ip-default.tcl'
+09:34:19 INFO  : Disconnected from the channel tcfchan#6.
+09:34:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:34:21 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+09:34:21 INFO  : 'jtag frequency' command is executed.
+09:34:21 INFO  : Context for 'APU' is selected.
+09:34:21 INFO  : System reset is completed.
+09:34:24 INFO  : 'after 3000' command is executed.
+09:34:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+09:34:26 INFO  : Device configured successfully with "C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/bitstream/AXI_IP.bit"
+09:34:26 INFO  : Context for 'APU' is selected.
+09:34:26 INFO  : Hardware design and registers information is loaded from 'C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/AXI_IP/export/AXI_IP/hw/AXI_IP.xsa'.
+09:34:26 INFO  : 'configparams force-mem-access 1' command is executed.
+09:34:26 INFO  : Context for 'APU' is selected.
+09:34:26 INFO  : Sourcing of 'C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/psinit/ps7_init.tcl' is done.
+09:34:26 INFO  : 'ps7_init' command is executed.
+09:34:26 INFO  : 'ps7_post_config' command is executed.
+09:34:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:34:27 INFO  : The application 'C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/Debug/Custom_AXI_IP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:34:27 INFO  : 'configparams force-mem-access 0' command is executed.
+09:34:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/bitstream/AXI_IP.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/AXI_IP/export/AXI_IP/hw/AXI_IP.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/Debug/Custom_AXI_IP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:34:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:34:27 INFO  : 'con' command is executed.
+09:34:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+09:34:27 INFO  : Launch script is exported to file 'C:\PXL\devWorks\devWorks2\AXI_IP_SOC\Vitis\Custom_AXI_IP_system\_ide\scripts\debugger_custom_axi_ip-default.tcl'
+09:37:36 INFO  : Disconnected from the channel tcfchan#7.
+09:37:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:37:37 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+09:37:37 INFO  : 'jtag frequency' command is executed.
+09:37:37 INFO  : Context for 'APU' is selected.
+09:37:37 INFO  : System reset is completed.
+09:37:40 INFO  : 'after 3000' command is executed.
+09:37:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+09:37:43 INFO  : Device configured successfully with "C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/bitstream/AXI_IP.bit"
+09:37:43 INFO  : Context for 'APU' is selected.
+09:37:43 INFO  : Hardware design and registers information is loaded from 'C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/AXI_IP/export/AXI_IP/hw/AXI_IP.xsa'.
+09:37:43 INFO  : 'configparams force-mem-access 1' command is executed.
+09:37:43 INFO  : Context for 'APU' is selected.
+09:37:43 INFO  : Sourcing of 'C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/psinit/ps7_init.tcl' is done.
+09:37:43 INFO  : 'ps7_init' command is executed.
+09:37:43 INFO  : 'ps7_post_config' command is executed.
+09:37:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:37:43 INFO  : The application 'C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/Debug/Custom_AXI_IP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:37:43 INFO  : 'configparams force-mem-access 0' command is executed.
+09:37:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/bitstream/AXI_IP.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/AXI_IP/export/AXI_IP/hw/AXI_IP.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/Debug/Custom_AXI_IP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:37:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:37:44 INFO  : 'con' command is executed.
+09:37:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+09:37:44 INFO  : Launch script is exported to file 'C:\PXL\devWorks\devWorks2\AXI_IP_SOC\Vitis\Custom_AXI_IP_system\_ide\scripts\debugger_custom_axi_ip-default.tcl'
+09:39:12 INFO  : Disconnected from the channel tcfchan#8.
+09:39:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:39:13 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+09:39:13 INFO  : 'jtag frequency' command is executed.
+09:39:13 INFO  : Context for 'APU' is selected.
+09:39:13 INFO  : System reset is completed.
+09:39:16 INFO  : 'after 3000' command is executed.
+09:39:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+09:39:19 INFO  : Device configured successfully with "C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/bitstream/AXI_IP.bit"
+09:39:19 INFO  : Context for 'APU' is selected.
+09:39:19 INFO  : Hardware design and registers information is loaded from 'C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/AXI_IP/export/AXI_IP/hw/AXI_IP.xsa'.
+09:39:19 INFO  : 'configparams force-mem-access 1' command is executed.
+09:39:19 INFO  : Context for 'APU' is selected.
+09:39:19 INFO  : Sourcing of 'C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/psinit/ps7_init.tcl' is done.
+09:39:19 INFO  : 'ps7_init' command is executed.
+09:39:19 INFO  : 'ps7_post_config' command is executed.
+09:39:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:39:19 INFO  : The application 'C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/Debug/Custom_AXI_IP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:39:19 INFO  : 'configparams force-mem-access 0' command is executed.
+09:39:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/bitstream/AXI_IP.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/AXI_IP/export/AXI_IP/hw/AXI_IP.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/Debug/Custom_AXI_IP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:39:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:39:20 INFO  : 'con' command is executed.
+09:39:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+09:39:20 INFO  : Launch script is exported to file 'C:\PXL\devWorks\devWorks2\AXI_IP_SOC\Vitis\Custom_AXI_IP_system\_ide\scripts\debugger_custom_axi_ip-default.tcl'
+09:39:53 INFO  : Build configuration of 'Custom_AXI_IP_system' is updated to 'Release'
+09:39:53 INFO  : Build configuration of system project is automatically updated to 'Release'.
+09:39:53 INFO  : Checking for BSP changes to sync application flags for project 'Custom_AXI_IP'...
+09:40:22 INFO  : Build configuration of 'Custom_AXI_IP_system' is updated to 'Debug'
+09:40:22 INFO  : Build configuration of system project is automatically updated to 'Debug'.
+09:40:22 INFO  : Checking for BSP changes to sync application flags for project 'Custom_AXI_IP'...
+09:40:27 INFO  : Disconnected from the channel tcfchan#9.
+09:40:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:40:28 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+09:40:28 INFO  : 'jtag frequency' command is executed.
+09:40:28 INFO  : Context for 'APU' is selected.
+09:40:28 INFO  : System reset is completed.
+09:40:31 INFO  : 'after 3000' command is executed.
+09:40:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+09:40:34 INFO  : Device configured successfully with "C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/bitstream/AXI_IP.bit"
+09:40:34 INFO  : Context for 'APU' is selected.
+09:40:34 INFO  : Hardware design and registers information is loaded from 'C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/AXI_IP/export/AXI_IP/hw/AXI_IP.xsa'.
+09:40:34 INFO  : 'configparams force-mem-access 1' command is executed.
+09:40:34 INFO  : Context for 'APU' is selected.
+09:40:34 INFO  : Sourcing of 'C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/psinit/ps7_init.tcl' is done.
+09:40:34 INFO  : 'ps7_init' command is executed.
+09:40:34 INFO  : 'ps7_post_config' command is executed.
+09:40:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:40:34 INFO  : The application 'C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/Debug/Custom_AXI_IP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:40:34 INFO  : 'configparams force-mem-access 0' command is executed.
+09:40:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/bitstream/AXI_IP.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/AXI_IP/export/AXI_IP/hw/AXI_IP.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/Debug/Custom_AXI_IP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:40:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:40:35 INFO  : 'con' command is executed.
+09:40:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+09:40:35 INFO  : Launch script is exported to file 'C:\PXL\devWorks\devWorks2\AXI_IP_SOC\Vitis\Custom_AXI_IP_system\_ide\scripts\debugger_custom_axi_ip-default.tcl'
+09:41:04 INFO  : Disconnected from the channel tcfchan#10.
+09:41:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:41:05 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+09:41:05 INFO  : 'jtag frequency' command is executed.
+09:41:05 INFO  : Context for 'APU' is selected.
+09:41:05 INFO  : System reset is completed.
+09:41:08 INFO  : 'after 3000' command is executed.
+09:41:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+09:41:11 INFO  : Device configured successfully with "C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/bitstream/AXI_IP.bit"
+09:41:11 INFO  : Context for 'APU' is selected.
+09:41:11 INFO  : Hardware design and registers information is loaded from 'C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/AXI_IP/export/AXI_IP/hw/AXI_IP.xsa'.
+09:41:11 INFO  : 'configparams force-mem-access 1' command is executed.
+09:41:11 INFO  : Context for 'APU' is selected.
+09:41:11 INFO  : Sourcing of 'C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/psinit/ps7_init.tcl' is done.
+09:41:11 INFO  : 'ps7_init' command is executed.
+09:41:11 INFO  : 'ps7_post_config' command is executed.
+09:41:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:41:11 INFO  : The application 'C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/Debug/Custom_AXI_IP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:41:11 INFO  : 'configparams force-mem-access 0' command is executed.
+09:41:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/bitstream/AXI_IP.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/AXI_IP/export/AXI_IP/hw/AXI_IP.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/Custom_AXI_IP/Debug/Custom_AXI_IP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:41:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:41:12 INFO  : 'con' command is executed.
+09:41:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+09:41:12 INFO  : Launch script is exported to file 'C:\PXL\devWorks\devWorks2\AXI_IP_SOC\Vitis\Custom_AXI_IP_system\_ide\scripts\debugger_custom_axi_ip-default.tcl'
+09:41:37 INFO  : Disconnected from the channel tcfchan#11.

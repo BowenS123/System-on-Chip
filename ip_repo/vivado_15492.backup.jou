@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2024.1.2 (64-bit)
+# SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
+# IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
+# SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
+# Start of session at: Mon Mar  3 09:39:04 2025
+# Process ID: 15492
+# Current directory: C:/PXL/devWorks/devWorks2/ip_repo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5108 C:\PXL\devWorks\devWorks2\ip_repo\edit_eFPGA_AXI_Core1_v1_0.xpr
+# Log file: C:/PXL/devWorks/devWorks2/ip_repo/vivado.log
+# Journal file: C:/PXL/devWorks/devWorks2/ip_repo\vivado.jou
+# Running On        :Bowen-Laptop
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26100
+# Processor Detail  :Snapdragon(R) X Plus - X1P42100 - Qualcomm(R) Oryon(TM) CPU
+# CPU Frequency     :2976 MHz
+# CPU Physical cores:8
+# CPU Logical cores :8
+# Host memory       :16759 MB
+# Swap memory       :1073 MB
+# Total Virtual     :17832 MB
+# Available Virtual :6795 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/PXL/devWorks/devWorks2/ip_repo/edit_eFPGA_AXI_Core1_v1_0.xpr
+update_compile_order -fileset sources_1

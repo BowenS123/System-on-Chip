@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="ILADEMO_APP" location="C:/PXL/devWorks/devWorks2/ILA_DEMO/Vitis/ILADEMO_APP" platform="C:/PXL/devWorks/devWorks2/ILA_DEMO/Vitis/ILADEMO/export/ILADEMO/ILADEMO.xpfm" platformUID="xilinx:pynq-z2::0.0(custom)" systemProject="ILADEMO_APP_system" sysConfig="ILADEMO" runtime="cpp" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="8ddc542bb70d5f13c29e93a700805e15">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.141304128">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.872760201" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

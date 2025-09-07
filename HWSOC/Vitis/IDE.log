@@ -1,0 +1,479 @@
+09:34:51 DEBUG : Logs will be stored at 'C:/devWorks/devWorks2/HWSOC/Vitis/IDE.log'.
+09:35:01 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\devWorks\devWorks2\HWSOC\Vitis\temp_xsdb_launch_script.tcl
+09:35:01 INFO  : Platform repository initialization has completed.
+09:35:01 INFO  : Registering command handlers for Vitis TCF services
+09:35:01 ERROR : (XSDB Server)'\gnu\microblaze\lin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+09:35:01 ERROR : (XSDB Server)'\gnu\microblaze\nt\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+'\gnuwin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+09:35:05 INFO  : XSCT server has started successfully.
+09:35:07 INFO  : plnx-install-location is set to ''
+09:35:07 INFO  : Successfully done setting XSCT server connection channel  
+09:35:07 INFO  : Successfully done query RDI_DATADIR 
+09:35:07 INFO  : Successfully done setting workspace for the tool. 
+09:41:47 INFO  : Result from executing command 'getProjects': HWSOC
+09:41:47 INFO  : Result from executing command 'getPlatforms': 
+09:41:47 WARN  : An unexpected exception occurred in the module 'platform project logging'
+09:41:47 INFO  : Platform 'HWSOC' is added to custom repositories.
+09:41:58 INFO  : Platform 'HWSOC' is added to custom repositories.
+09:42:54 INFO  : Result from executing command 'getProjects': HWSOC
+09:42:54 INFO  : Result from executing command 'getPlatforms': HWSOC|C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC/export/HWSOC/HWSOC.xpfm
+09:44:55 INFO  : Checking for BSP changes to sync application flags for project 'HWSOC_App'...
+09:45:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:45:40 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+09:45:40 INFO  : 'jtag frequency' command is executed.
+09:45:40 INFO  : Context for 'APU' is selected.
+09:45:40 INFO  : System reset is completed.
+09:45:43 INFO  : 'after 3000' command is executed.
+09:45:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+09:45:46 INFO  : Device configured successfully with "C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/bitstream/HWSOC.bit"
+09:45:46 INFO  : Context for 'APU' is selected.
+09:45:46 INFO  : Hardware design and registers information is loaded from 'C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC/export/HWSOC/hw/HWSOC.xsa'.
+09:45:46 INFO  : 'configparams force-mem-access 1' command is executed.
+09:45:46 INFO  : Context for 'APU' is selected.
+09:45:46 INFO  : Sourcing of 'C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/psinit/ps7_init.tcl' is done.
+09:45:46 ERROR : Memory read error at 0xF8F00208. Cannot halt processor core, timeout
+09:45:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/bitstream/HWSOC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC/export/HWSOC/hw/HWSOC.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/psinit/ps7_init.tcl
+ps7_init
+----------------End of Script----------------
+
+09:45:46 ERROR : Memory read error at 0xF8F00208. Cannot halt processor core, timeout
+09:49:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:49:02 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+09:49:02 INFO  : 'jtag frequency' command is executed.
+09:49:02 INFO  : Context for 'APU' is selected.
+09:49:03 INFO  : System reset is completed.
+09:49:06 INFO  : 'after 3000' command is executed.
+09:49:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+09:49:08 INFO  : Device configured successfully with "C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/bitstream/HWSOC.bit"
+09:49:08 INFO  : Context for 'APU' is selected.
+09:49:08 INFO  : Hardware design and registers information is loaded from 'C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC/export/HWSOC/hw/HWSOC.xsa'.
+09:49:08 INFO  : 'configparams force-mem-access 1' command is executed.
+09:49:08 INFO  : Context for 'APU' is selected.
+09:49:08 INFO  : Sourcing of 'C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/psinit/ps7_init.tcl' is done.
+09:49:08 ERROR : Memory read error at 0xF8F00208. Cannot halt processor core, timeout
+09:49:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/bitstream/HWSOC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC/export/HWSOC/hw/HWSOC.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/psinit/ps7_init.tcl
+ps7_init
+----------------End of Script----------------
+
+09:49:08 ERROR : Memory read error at 0xF8F00208. Cannot halt processor core, timeout
+09:49:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:49:33 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+09:49:33 INFO  : 'jtag frequency' command is executed.
+09:49:33 INFO  : Context for 'APU' is selected.
+09:49:33 INFO  : System reset is completed.
+09:49:36 INFO  : 'after 3000' command is executed.
+09:49:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+09:49:39 INFO  : Device configured successfully with "C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/bitstream/HWSOC.bit"
+09:49:39 INFO  : Context for 'APU' is selected.
+09:49:39 INFO  : Hardware design and registers information is loaded from 'C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC/export/HWSOC/hw/HWSOC.xsa'.
+09:49:39 INFO  : 'configparams force-mem-access 1' command is executed.
+09:49:39 INFO  : Context for 'APU' is selected.
+09:49:39 INFO  : Sourcing of 'C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/psinit/ps7_init.tcl' is done.
+09:49:39 INFO  : 'ps7_init' command is executed.
+09:49:39 INFO  : 'ps7_post_config' command is executed.
+09:49:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:49:39 ERROR : Memory write error at 0x100000. MMU section translation fault
+09:49:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/bitstream/HWSOC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC/export/HWSOC/hw/HWSOC.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/Debug/HWSOC_App.elf
+----------------End of Script----------------
+
+09:49:39 ERROR : Memory write error at 0x100000. MMU section translation fault
+09:49:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:49:59 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+09:49:59 INFO  : 'jtag frequency' command is executed.
+09:49:59 INFO  : Context for 'APU' is selected.
+09:50:00 INFO  : System reset is completed.
+09:50:03 INFO  : 'after 3000' command is executed.
+09:50:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+09:50:05 INFO  : Device configured successfully with "C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/bitstream/HWSOC.bit"
+09:50:05 INFO  : Context for 'APU' is selected.
+09:50:05 INFO  : Hardware design and registers information is loaded from 'C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC/export/HWSOC/hw/HWSOC.xsa'.
+09:50:05 INFO  : 'configparams force-mem-access 1' command is executed.
+09:50:05 INFO  : Context for 'APU' is selected.
+09:50:05 INFO  : Sourcing of 'C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/psinit/ps7_init.tcl' is done.
+09:50:06 ERROR : Memory read error at 0xF8F00208. Cannot halt processor core, timeout
+09:50:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/bitstream/HWSOC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC/export/HWSOC/hw/HWSOC.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/psinit/ps7_init.tcl
+ps7_init
+----------------End of Script----------------
+
+09:50:06 ERROR : Memory read error at 0xF8F00208. Cannot halt processor core, timeout
+09:51:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:51:02 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+09:51:02 INFO  : 'jtag frequency' command is executed.
+09:51:02 INFO  : Context for 'APU' is selected.
+09:51:02 INFO  : System reset is completed.
+09:51:05 INFO  : 'after 3000' command is executed.
+09:51:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+09:51:07 INFO  : Device configured successfully with "C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/bitstream/HWSOC.bit"
+09:51:07 INFO  : Context for 'APU' is selected.
+09:51:07 INFO  : Hardware design and registers information is loaded from 'C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC/export/HWSOC/hw/HWSOC.xsa'.
+09:51:07 INFO  : 'configparams force-mem-access 1' command is executed.
+09:51:07 INFO  : Context for 'APU' is selected.
+09:51:07 INFO  : Sourcing of 'C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/psinit/ps7_init.tcl' is done.
+09:51:08 ERROR : Memory read error at 0xF8F00208. Cannot halt processor core, timeout
+09:51:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/bitstream/HWSOC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC/export/HWSOC/hw/HWSOC.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/psinit/ps7_init.tcl
+ps7_init
+----------------End of Script----------------
+
+09:51:08 ERROR : Memory read error at 0xF8F00208. Cannot halt processor core, timeout
+09:51:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:51:50 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+09:51:50 INFO  : 'jtag frequency' command is executed.
+09:51:50 INFO  : Context for 'APU' is selected.
+09:51:50 INFO  : System reset is completed.
+09:51:53 INFO  : 'after 3000' command is executed.
+09:51:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+09:51:55 INFO  : Device configured successfully with "C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/bitstream/HWSOC.bit"
+09:51:55 INFO  : Context for 'APU' is selected.
+09:51:55 INFO  : Hardware design and registers information is loaded from 'C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC/export/HWSOC/hw/HWSOC.xsa'.
+09:51:55 INFO  : 'configparams force-mem-access 1' command is executed.
+09:51:55 INFO  : Context for 'APU' is selected.
+09:51:55 INFO  : Sourcing of 'C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/psinit/ps7_init.tcl' is done.
+09:51:55 ERROR : Memory read error at 0xF8F00208. Cannot halt processor core, timeout
+09:51:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/bitstream/HWSOC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC/export/HWSOC/hw/HWSOC.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/psinit/ps7_init.tcl
+ps7_init
+----------------End of Script----------------
+
+09:51:55 ERROR : Memory read error at 0xF8F00208. Cannot halt processor core, timeout
+09:53:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:53:02 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+09:53:02 INFO  : 'jtag frequency' command is executed.
+09:53:02 INFO  : Context for 'APU' is selected.
+09:53:03 ERROR : Cannot reset APU. Timeout waiting DAP to reconnect after reset
+09:53:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+----------------End of Script----------------
+
+09:53:03 ERROR : Cannot reset APU. Timeout waiting DAP to reconnect after reset
+09:53:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:53:11 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+09:53:11 INFO  : 'jtag frequency' command is executed.
+09:53:11 INFO  : Context for 'APU' is selected.
+09:53:11 INFO  : System reset is completed.
+09:53:14 INFO  : 'after 3000' command is executed.
+09:53:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+09:53:17 INFO  : Device configured successfully with "C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/bitstream/HWSOC.bit"
+09:53:17 INFO  : Context for 'APU' is selected.
+09:53:17 INFO  : Hardware design and registers information is loaded from 'C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC/export/HWSOC/hw/HWSOC.xsa'.
+09:53:17 INFO  : 'configparams force-mem-access 1' command is executed.
+09:53:17 INFO  : Context for 'APU' is selected.
+09:53:17 INFO  : Sourcing of 'C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/psinit/ps7_init.tcl' is done.
+09:53:17 INFO  : 'ps7_init' command is executed.
+09:53:17 INFO  : 'ps7_post_config' command is executed.
+09:53:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:53:17 INFO  : The application 'C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/Debug/HWSOC_App.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:53:17 INFO  : 'configparams force-mem-access 0' command is executed.
+09:53:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/bitstream/HWSOC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC/export/HWSOC/hw/HWSOC.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/Debug/HWSOC_App.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:53:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:53:18 INFO  : 'con' command is executed.
+09:53:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+09:53:18 INFO  : Launch script is exported to file 'C:\devWorks\devWorks2\HWSOC\Vitis\HWSOC_App_system\_ide\scripts\debugger_hwsoc_app-default.tcl'
+09:53:36 INFO  : Disconnected from the channel tcfchan#2.
+09:53:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:53:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+09:53:47 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+09:54:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:54:39 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+09:54:39 INFO  : 'jtag frequency' command is executed.
+09:54:39 INFO  : Context for 'APU' is selected.
+09:54:39 INFO  : System reset is completed.
+09:54:42 INFO  : 'after 3000' command is executed.
+09:54:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+09:54:45 INFO  : Device configured successfully with "C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/bitstream/HWSOC.bit"
+09:54:45 INFO  : Context for 'APU' is selected.
+09:54:45 INFO  : Hardware design and registers information is loaded from 'C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC/export/HWSOC/hw/HWSOC.xsa'.
+09:54:45 INFO  : 'configparams force-mem-access 1' command is executed.
+09:54:45 INFO  : Context for 'APU' is selected.
+09:54:45 INFO  : Sourcing of 'C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/psinit/ps7_init.tcl' is done.
+09:54:45 INFO  : 'ps7_init' command is executed.
+09:54:45 INFO  : 'ps7_post_config' command is executed.
+09:54:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:54:45 INFO  : The application 'C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/Debug/HWSOC_App.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:54:45 INFO  : 'configparams force-mem-access 0' command is executed.
+09:54:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/bitstream/HWSOC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC/export/HWSOC/hw/HWSOC.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/Debug/HWSOC_App.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:54:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:54:46 INFO  : 'con' command is executed.
+09:54:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+09:54:46 INFO  : Launch script is exported to file 'C:\devWorks\devWorks2\HWSOC\Vitis\HWSOC_App_system\_ide\scripts\debugger_hwsoc_app-default.tcl'
+09:55:16 INFO  : Disconnected from the channel tcfchan#4.
+09:55:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:55:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+09:55:26 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+09:55:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:55:53 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+09:55:53 INFO  : 'jtag frequency' command is executed.
+09:55:53 INFO  : Context for 'APU' is selected.
+09:55:53 INFO  : System reset is completed.
+09:55:56 INFO  : 'after 3000' command is executed.
+09:55:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+09:55:58 INFO  : Device configured successfully with "C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/bitstream/HWSOC.bit"
+09:55:58 INFO  : Context for 'APU' is selected.
+09:55:58 INFO  : Hardware design and registers information is loaded from 'C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC/export/HWSOC/hw/HWSOC.xsa'.
+09:55:58 INFO  : 'configparams force-mem-access 1' command is executed.
+09:55:58 INFO  : Context for 'APU' is selected.
+09:55:58 INFO  : Sourcing of 'C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/psinit/ps7_init.tcl' is done.
+09:55:58 INFO  : 'ps7_init' command is executed.
+09:55:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:55:58 INFO  : 'ps7_post_config' command is executed.
+09:55:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:55:59 INFO  : The application 'C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/Debug/HWSOC_App.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:55:59 INFO  : 'configparams force-mem-access 0' command is executed.
+09:55:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/bitstream/HWSOC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC/export/HWSOC/hw/HWSOC.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/Debug/HWSOC_App.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:55:59 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+09:55:59 INFO  : 'jtag frequency' command is executed.
+09:55:59 INFO  : Context for 'APU' is selected.
+09:55:59 INFO  : System reset is completed.
+09:56:02 INFO  : 'after 3000' command is executed.
+09:56:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:56:02 ERROR : Already running
+09:56:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+09:56:05 INFO  : Device configured successfully with "C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/bitstream/HWSOC.bit"
+09:56:05 INFO  : Context for 'APU' is selected.
+09:56:05 INFO  : Hardware design and registers information is loaded from 'C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC/export/HWSOC/hw/HWSOC.xsa'.
+09:56:05 INFO  : 'configparams force-mem-access 1' command is executed.
+09:56:05 INFO  : Context for 'APU' is selected.
+09:56:05 INFO  : Sourcing of 'C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/psinit/ps7_init.tcl' is done.
+09:56:05 INFO  : 'ps7_init' command is executed.
+09:56:05 INFO  : 'ps7_post_config' command is executed.
+09:56:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:56:05 INFO  : The application 'C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/Debug/HWSOC_App.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:56:05 INFO  : 'configparams force-mem-access 0' command is executed.
+09:56:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/bitstream/HWSOC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC/export/HWSOC/hw/HWSOC.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/Debug/HWSOC_App.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:56:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:56:05 INFO  : 'con' command is executed.
+09:56:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+09:56:05 INFO  : Launch script is exported to file 'C:\devWorks\devWorks2\HWSOC\Vitis\HWSOC_App_system\_ide\scripts\debugger_hwsoc_app-default.tcl'
+09:56:15 INFO  : Disconnected from the channel tcfchan#5.
+09:56:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:56:17 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+09:56:17 INFO  : 'jtag frequency' command is executed.
+09:56:17 INFO  : Context for 'APU' is selected.
+09:56:17 INFO  : System reset is completed.
+09:56:20 INFO  : 'after 3000' command is executed.
+09:56:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+09:56:22 INFO  : Device configured successfully with "C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/bitstream/HWSOC.bit"
+09:56:22 INFO  : Context for 'APU' is selected.
+09:56:22 INFO  : Hardware design and registers information is loaded from 'C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC/export/HWSOC/hw/HWSOC.xsa'.
+09:56:22 INFO  : 'configparams force-mem-access 1' command is executed.
+09:56:22 INFO  : Context for 'APU' is selected.
+09:56:22 INFO  : Sourcing of 'C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/psinit/ps7_init.tcl' is done.
+09:56:23 INFO  : 'ps7_init' command is executed.
+09:56:23 INFO  : 'ps7_post_config' command is executed.
+09:56:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:56:23 INFO  : The application 'C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/Debug/HWSOC_App.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:56:23 INFO  : 'configparams force-mem-access 0' command is executed.
+09:56:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/bitstream/HWSOC.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC/export/HWSOC/hw/HWSOC.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/devWorks/devWorks2/HWSOC/Vitis/HWSOC_App/Debug/HWSOC_App.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:56:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:56:23 INFO  : 'con' command is executed.
+09:56:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+09:56:23 INFO  : Launch script is exported to file 'C:\devWorks\devWorks2\HWSOC\Vitis\HWSOC_App_system\_ide\scripts\debugger_hwsoc_app-default.tcl'
+10:10:08 INFO  : Disconnected from the channel tcfchan#6.

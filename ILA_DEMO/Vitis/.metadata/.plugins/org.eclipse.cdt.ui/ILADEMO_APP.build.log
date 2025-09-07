@@ -1,0 +1,34 @@
+09:40:54 **** Build of configuration Debug for project ILADEMO_APP ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/PXL/devWorks/devWorks2/ILA_DEMO/Vitis/ILADEMO/export/ILADEMO/sw/ILADEMO/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:14:9: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+   14 |     int Status;
+      |         ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/PXL/devWorks/devWorks2/ILA_DEMO/Vitis/ILADEMO/export/ILADEMO/sw/ILADEMO/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: ILADEMO_APP.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/PXL/devWorks/devWorks2/ILA_DEMO/Vitis/ILADEMO/export/ILADEMO/sw/ILADEMO/standalone_ps7_cortexa9_0/bsplib/lib -o "ILADEMO_APP.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ILADEMO_APP.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ILADEMO_APP.elf  |tee "ILADEMO_APP.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24321	   1160	  22592	  48073	   bbc9	ILADEMO_APP.elf
+'Finished building: ILADEMO_APP.elf.size'
+' '
+
+09:40:55 Build Finished (took 1s.560ms)
+

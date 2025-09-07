@@ -1,0 +1,64 @@
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "AXI_NeoPixel.h"
+#include "xparameters.h"
+#include "xgpio.h"
+
+XGpio leds;
+XGpio buttons;
+
+void delay(int n) {
+    for(int i = 0; i < n; i++);
+}
+
+int main()
+{
+    init_platform();
+
+    print("Bowen Liang\n\r");
+
+    XGpio_Initialize(&leds, XPAR_AXI_GPIO_0_DEVICE_ID);
+    XGpio_Initialize(&buttons, XPAR_AXI_GPIO_1_DEVICE_ID);
+    XGpio_SetDataDirection(&leds, 1, 0x00);
+    XGpio_SetDataDirection(&buttons, 1, 0xFF);
+
+    for(int i = 0; i < 64; i++) {
+        AXI_NEOPIXEL_mWriteReg(XPAR_AXI_NEOPIXEL_0_S00_AXI_BASEADDR,AXI_NEOPIXEL_S00_AXI_SLV_REG0_OFFSET + i * 4, 0xFF0000);
+    }
+
+    int y = 0;
+    int x = 0;
+
+    int led_state = 0x01;
+    int led_timer = 0;
+
+    AXI_NEOPIXEL_mWriteReg(XPAR_AXI_NEOPIXEL_0_S00_AXI_BASEADDR, AXI_NEOPIXEL_S00_AXI_SLV_REG0_OFFSET + (y * 8 + x) * 4, 0x0000FF);
+
+    while (1)
+    {
+        delay(1000000);
+
+        led_timer++;
+        if (led_timer >= 50) {
+            XGpio_DiscreteWrite(&leds, 2, led_state);
+            led_state <<= 1;
+            if (led_state > 0x08) led_state = 0x01;
+            led_timer = 0;
+        }
+
+        int btns = XGpio_DiscreteRead(&buttons, 2);
+
+        AXI_NEOPIXEL_mWriteReg(XPAR_AXI_NEOPIXEL_0_S00_AXI_BASEADDR, AXI_NEOPIXEL_S00_AXI_SLV_REG0_OFFSET + (y * 8 + x) * 4, 0xFF0000);
+
+        if(btns & 0x01 && y > 0) y--;
+        if(btns & 0x02 && y < 7) y++;
+        if(btns & 0x04 && x > 0) x--;
+        if(btns & 0x08 && x < 7) x++;
+
+        AXI_NEOPIXEL_mWriteReg(XPAR_AXI_NEOPIXEL_0_S00_AXI_BASEADDR, AXI_NEOPIXEL_S00_AXI_SLV_REG0_OFFSET + (y * 8 + x) * 4, 0x00FF00);
+    }
+
+    cleanup_platform();
+    return 0;
+}

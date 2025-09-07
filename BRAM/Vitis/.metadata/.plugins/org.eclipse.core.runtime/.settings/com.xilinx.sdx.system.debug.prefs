@@ -1,0 +1,16 @@
+com.xilinx.sdk.linkgen.prefs.BRAM_APP\:.bss=axi_bram_ctrl_0_Mem0
+com.xilinx.sdk.linkgen.prefs.BRAM_APP\:.data=axi_bram_ctrl_0_Mem0
+com.xilinx.sdk.linkgen.prefs.BRAM_APP\:.data1=axi_bram_ctrl_0_Mem0
+com.xilinx.sdk.linkgen.prefs.BRAM_APP\:.fixup=axi_bram_ctrl_0_Mem0
+com.xilinx.sdk.linkgen.prefs.BRAM_APP\:.rodata=axi_bram_ctrl_0_Mem0
+com.xilinx.sdk.linkgen.prefs.BRAM_APP\:.rodata1=axi_bram_ctrl_0_Mem0
+com.xilinx.sdk.linkgen.prefs.BRAM_APP\:.sbss=axi_bram_ctrl_0_Mem0
+com.xilinx.sdk.linkgen.prefs.BRAM_APP\:.sbss2=axi_bram_ctrl_0_Mem0
+com.xilinx.sdk.linkgen.prefs.BRAM_APP\:.sdata=axi_bram_ctrl_0_Mem0
+com.xilinx.sdk.linkgen.prefs.BRAM_APP\:.sdata2=axi_bram_ctrl_0_Mem0
+com.xilinx.sdk.linkgen.prefs.BRAM_APP\:.text=axi_bram_ctrl_0_Mem0
+com.xilinx.sdk.linkgen.prefs.BRAM_APP\:heap=axi_bram_ctrl_0_Mem0
+com.xilinx.sdk.linkgen.prefs.BRAM_APP\:heap-size=1024
+com.xilinx.sdk.linkgen.prefs.BRAM_APP\:stack=axi_bram_ctrl_0_Mem0
+com.xilinx.sdk.linkgen.prefs.BRAM_APP\:stack-size=1024
+eclipse.preferences.version=1

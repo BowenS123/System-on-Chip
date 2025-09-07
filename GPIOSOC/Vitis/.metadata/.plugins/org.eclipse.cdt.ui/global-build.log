@@ -1,0 +1,24 @@
+Nothing to build in platform 'GPIOSOC'
+
+10:58:00 **** Incremental Build of configuration Debug for project GPIO_SOC ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/PXL/devWorks/devWorks2/GPIOSOC/Vitis/GPIOSOC/export/GPIOSOC/sw/GPIOSOC/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: GPIO_SOC.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/PXL/devWorks/devWorks2/GPIOSOC/Vitis/GPIOSOC/export/GPIOSOC/sw/GPIOSOC/standalone_ps7_cortexa9_0/bsplib/lib -o "GPIO_SOC.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_SOC.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_SOC.elf  |tee "GPIO_SOC.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28193	   1168	  22656	  52017	   cb31	GPIO_SOC.elf
+'Finished building: GPIO_SOC.elf.size'
+' '

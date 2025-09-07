@@ -1,0 +1,16 @@
+12:28:05 **** Build of configuration Debug for project BRAM_APP_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 50081 C:/PXL/devWorks/devWorks2/BRAM/Vitis/BRAM/export/BRAM/BRAM.xpfm standalone_ps7_cortexa9_0 C:/PXL/devWorks/devWorks2/BRAM/Vitis/BRAM_APP_system/Debug/system.bif
+'\gnu\microblaze\lin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+'\gnu\microblaze\nt\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+'\gnuwin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+sdcard_gen --xpfm C:/PXL/devWorks/devWorks2/BRAM/Vitis/BRAM/export/BRAM/BRAM.xpfm --sys_config BRAM --bif C:/PXL/devWorks/devWorks2/BRAM/Vitis/BRAM_APP_system/Debug/system.bif --bitstream C:/PXL/devWorks/devWorks2/BRAM/Vitis/BRAM_APP/_ide/bitstream/BRAM.bit --elf C:/PXL/devWorks/devWorks2/BRAM/Vitis/BRAM_APP/Debug/BRAM_APP.elf,ps7_cortexa9_0
+creating BOOT.BIN using C:/PXL/devWorks/devWorks2/BRAM/Vitis/BRAM_APP/_ide/bitstream/BRAM.bit
+Running C:/Xilinx/Vitis/2024.1/bin/bootgen  -image C:/PXL/devWorks/devWorks2/BRAM/Vitis/BRAM_APP_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+12:28:23 Build Finished (took 18s.309ms)
+

@@ -1,0 +1,54 @@
+#-----------------------------------------------------------
+# Vivado v2024.1.2 (64-bit)
+# SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
+# IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
+# SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
+# Start of session at: Mon Mar  3 10:11:22 2025
+# Process ID: 10088
+# Current directory: C:/PXL/devWorks/devWorks2/Custom_AXI_IP_Blokken/Custom_AXI_IP_Blokken.runs/design_1_e7_segment_display_0_0_synth_1
+# Command line: vivado.exe -log design_1_e7_segment_display_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_e7_segment_display_0_0.tcl
+# Log file: C:/PXL/devWorks/devWorks2/Custom_AXI_IP_Blokken/Custom_AXI_IP_Blokken.runs/design_1_e7_segment_display_0_0_synth_1/design_1_e7_segment_display_0_0.vds
+# Journal file: C:/PXL/devWorks/devWorks2/Custom_AXI_IP_Blokken/Custom_AXI_IP_Blokken.runs/design_1_e7_segment_display_0_0_synth_1\vivado.jou
+# Running On        :Bowen-Laptop
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26100
+# Processor Detail  :Snapdragon(R) X Plus - X1P42100 - Qualcomm(R) Oryon(TM) CPU
+# CPU Frequency     :2976 MHz
+# CPU Physical cores:8
+# CPU Logical cores :8
+# Host memory       :16759 MB
+# Swap memory       :1073 MB
+# Total Virtual     :17832 MB
+# Available Virtual :4846 MB
+#-----------------------------------------------------------
+source design_1_e7_segment_display_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 522.082 ; gain = 133.410
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/PXL/devWorks/devWorks2/ip_repo/e7_segment_display_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_e7_segment_display_0_0
+Command: synth_design -top design_1_e7_segment_display_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Device 21-9227] Part: xc7z020clg400-1 does not have CEAM library.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14232
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1425.559 ; gain = 450.113
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-11560] semicolon after last interface declaration is only supported in VHDL 1076-2019 [c:/PXL/devWorks/devWorks2/Custom_AXI_IP_Blokken/Custom_AXI_IP_Blokken.gen/sources_1/bd/design_1/ipshared/881c/bc9d/axi_7segmet_display.vhd:37]
+INFO: [Synth 8-11252] unit 'axi_7segment_display' is ignored due to previous errors [c:/PXL/devWorks/devWorks2/Custom_AXI_IP_Blokken/Custom_AXI_IP_Blokken.gen/sources_1/bd/design_1/ipshared/881c/bc9d/axi_7segmet_display.vhd:39]
+INFO: [Synth 8-10443] VHDL file 'c:/PXL/devWorks/devWorks2/Custom_AXI_IP_Blokken/Custom_AXI_IP_Blokken.gen/sources_1/bd/design_1/ipshared/881c/bc9d/axi_7segmet_display.vhd' is ignored due to errors
+ERROR: [Synth 8-439] module 'design_1_e7_segment_display_0_0' not found
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1541.805 ; gain = 566.359
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+13 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Mon Mar  3 10:11:47 2025...

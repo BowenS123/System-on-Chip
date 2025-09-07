@@ -1,0 +1,25 @@
+09:40:23 **** Incremental Build of configuration Debug for project Custom_AXI_IP ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/AXI_IP/export/AXI_IP/sw/AXI_IP/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Custom_AXI_IP.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/PXL/devWorks/devWorks2/AXI_IP_SOC/Vitis/AXI_IP/export/AXI_IP/sw/AXI_IP/standalone_ps7_cortexa9_0/bsplib/lib -o "Custom_AXI_IP.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Custom_AXI_IP.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Custom_AXI_IP.elf  |tee "Custom_AXI_IP.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80301	   2552	  22640	 105493	  19c15	Custom_AXI_IP.elf
+'Finished building: Custom_AXI_IP.elf.size'
+' '
+
+09:40:24 Build Finished (took 1s.7ms)
+
